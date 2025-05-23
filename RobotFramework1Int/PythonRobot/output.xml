@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0.3 (Python 3.12.3 on win32)" generated="20240711 17:03:56.454" rpa="false" schemaversion="2">
+<suite id="s1" name="Testfile" source="C:\Users\TREENETRA\PycharmProjects\TREENETRAProject\RobotFramework1Int\PythonRobot\testfile.robot">
+<test id="s1-t1" name="Addition Test">
+<kw name="Add">
+<var>${result}=</var>
+<arg>${A}</arg>
+<arg>${B}</arg>
+<msg timestamp="20240711 17:03:56.495" level="FAIL">No keyword with name 'Add' found.</msg>
+<status status="FAIL" starttime="20240711 17:03:56.495" endtime="20240711 17:03:56.495"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${result}</arg>
+<arg>15</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="NOT RUN" starttime="20240711 17:03:56.495" endtime="20240711 17:03:56.495"/>
+</kw>
+<status status="FAIL" starttime="20240711 17:03:56.492" endtime="20240711 17:03:56.496">No keyword with name 'Add' found.</status>
+</test>
+<status status="FAIL" starttime="20240711 17:03:56.455" endtime="20240711 17:03:56.501"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Testfile">Testfile</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20240711 17:03:56.490" level="WARN">Imported library 'C:\Users\TREENETRA\PycharmProjects\TREENETRAProject\RobotFramework1Int\PythonRobot\source_file.py' contains no keywords.</msg>
+</errors>
+</robot>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E-commerce Transactions</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            border: 1px solid #999;
+            padding: 8px;
+            text-align: center;
+        }
+        thead {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">E-commerce Transactions Table</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Product Name</th>
+                <th>Date</th>
+                <th>Price ($)</th>
+                <th>Month</th>
+            </tr>
+        </thead>
+        <tbody id="ecom-data-body">
+            <!-- Rows will be added dynamically -->
+        </tbody>
+    </table>
+
+    <script>
+        const tbody = document.getElementById("ecom-data-body");
+
+        const names = ["Alice", "Bob", "Charlie", "Diana", "Evan"];
+        const addresses = ["NY", "LA", "Chicago", "Houston", "Miami"];
+        const products = ["Laptop", "Phone", "Tablet", "Headphones", "Monitor"];
+        const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun"];
+
+        for (let i = 1; i <= 1000; i++) {
+            const name = names[i % names.length];
+            const address = addresses[i % addresses.length];
+            const product = products[i % products.length];
+            const date = `2025-${(i % 12 + 1).toString().padStart(2, '0')}-${(i % 28 + 1).toString().padStart(2, '0')}`;
+            const price = (Math.random() * 1000).toFixed(2);
+            const month = months[i % months.length];
+
+            const row = `
+                <tr>
+                    <td>${name}</td>
+                    <td>${address}</td>
+                    <td>${product}</td>
+                    <td>${date}</td>
+                    <td>${price}</td>
+                    <td>${month}</td>
+                </tr>
+            `;
+            tbody.insertAdjacentHTML("beforeend", row);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selenium Automation Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .dropdown, .autosuggest, .iframe-container, .popup-container, .hover-container {
+            margin-bottom: 20px;
+        }
+        select {
+            width: 200px;
+            padding: 5px;
+        }
+        .autosuggest input {
+            width: 200px;
+            padding: 5px;
+        }
+        .iframe-container iframe {
+            width: 600px;
+            height: 400px;
+        }
+        .popup-container button, .hover-container button {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .hover-container div {
+            width: 200px;
+            height: 100px;
+            background-color: lightgrey;
+            line-height: 100px;
+            text-align: center;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Selenium Automation Page</h1>
+
+    <!-- Relatable and Parent Sibling -->
+    <div class="relatable">
+        <label for="parent">Parent Dropdown:</label>
+        <select id="parent">
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+        </select>
+
+        <label for="child">Child Dropdown:</label>
+        <select id="child">
+            <option value="1" data-parent="1">Child Option 1</option>
+            <option value="2" data-parent="2">Child Option 2</option>
+        </select>
+    </div>
+
+    <!-- Selective Dropdown -->
+    <div class="dropdown">
+        <label for="select">Select an option:</label>
+        <select id="select">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+        </select>
+    </div>
+
+    <!-- Auto Suggestive Dropdown -->
+    <div class="autosuggest">
+        <label for="autosuggest">Type to auto-suggest:</label>
+        <input type="text" id="autosuggest" list="suggestions">
+        <datalist id="suggestions">
+            <option value="Apple">
+            <option value = "America">
+            <option value = "Andaman">
+            <option value = "Arunachal">
+            <option value = "Amela">
+            <option value="Banana">
+            <option value="Cherry">
+        </datalist>
+    </div>
+
+    <!-- Iframe -->
+    <div class="iframe-container">
+        <h2>Iframe Example</h2>
+        <iframe src="https://www.example.com"></iframe>
+    </div>
+
+    <!-- Popup and Alert -->
+    <div class="popup-container">
+        <button onclick="alert('This is an alert')">Show Alert</button>
+        <button onclick="window.open('https://www.example.com', '_blank')">Open Popup</button>
+    </div>
+
+    <!-- Mouse Hover -->
+    <div class="hover-container">
+        <div id="hover-box">Hover over me</div>
+    </div>
+
+    <script>
+        // Handle Parent-Child Dropdown
+        document.getElementById('parent').addEventListener('change', function() {
+            const parentValue = this.value;
+            const childOptions = document.querySelectorAll('#child option');
+            childOptions.forEach(option => {
+                option.style.display = option.getAttribute('data-parent') === parentValue ? 'block' : 'none';
+            });
+        });
+
+        // Handle Mouse Hover
+        document.getElementById('hover-box').addEventListener('mouseover', function() {
+            this.style.backgroundColor = 'lightblue';
+        });
+
+        document.getElementById('hover-box').addEventListener('mouseout', function() {
+            this.style.backgroundColor = 'lightgrey';
+        });
+    </script>
+</body>
+</html>

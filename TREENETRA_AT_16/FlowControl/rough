@@ -1,0 +1,15 @@
+it is a process who control of the logic.
+way of program , how we can follow the step wise.
+
+want a even number
+1.number is div by 2
+2. reminder is 0
+
+prime number
+1.num is div by only him self and 1.
+
+condition , itetation ,stop, skip, pass
+
+conditional statement(who use the condition, if condition statisfied then logic will impliment)
+iterational statement(we have data strcuture, those ds need to call one by one.
+transfer statement(break,continue,pass)

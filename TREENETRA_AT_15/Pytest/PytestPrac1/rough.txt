@@ -1,0 +1,48 @@
+markers and test categorization
+
+marker is annotatio  or decorator in pytest , are used to categorize tests and control the execution.
+
+markers are 6 type
+
+skip
+skipif
+xfail
+pass
+parameterized
+custom
+
+
+parameterization
+
+have a perticular test case.
++ve
+-ve
+test senario --- +ve(5) , -ve (15)
+
+test data --- source code parameter
+
+@pytest.mark.parametrization(testdata1,testdata2,exp_result),
+                [(),
+                (),
+                (),
+                ()]
+def test_f1_positive_testcase():
+
+    logic
+
+def test_f1_negetive_testcase():
+
+
+decorator ---- (testd1,testd2,expected),
+    (),
+    (),
+    ()
+
+
+facebook --- valid login , invalid login
+
+1
+
+5
+
+6

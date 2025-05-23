@@ -1,0 +1,18 @@
+2024-03-22 21:19:35,984 -INFO - A new request came
+2024-03-22 21:19:35,984 -INFO - Request Processing Completed
+2024-03-22 21:20:40,749 -INFO - A new request came
+2024-03-22 21:20:40,750 -INFO - Request Processing Completed
+2024-03-22 21:20:40,750 -ERROR - division by zero
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\TreenetraClass\ExceptionHandeling\exception_handeling.py", line 111, in divide_by_two
+    result = a/b
+             ~^~
+ZeroDivisionError: division by zero
+2024-03-22 21:20:40,759 -ERROR - unsupported operand type(s) for /: 'int' and 'str'
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\TreenetraClass\ExceptionHandeling\exception_handeling.py", line 111, in divide_by_two
+    result = a/b
+             ~^~
+TypeError: unsupported operand type(s) for /: 'int' and 'str'
+2024-03-22 21:23:24,306 -INFO - A new request came
+2024-03-22 21:23:24,307 -INFO - Request Processing Completed

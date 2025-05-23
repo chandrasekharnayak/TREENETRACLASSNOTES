@@ -1,0 +1,10 @@
+{
+    "Name": "Rahul",
+    "Age": 30,
+    "Department": "HR",
+    "Salary": 70000,
+    "Office": {
+        "Location": "Mumbai",
+        "Floor": 2
+    }
+}

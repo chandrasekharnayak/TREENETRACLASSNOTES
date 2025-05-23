@@ -1,0 +1,54 @@
+{
+  "employees": {
+    "1": {
+      "Age": 28,
+      "Department": "QC",
+      "Name": "Ajit",
+      "Office": {
+        "Floor": 3,
+        "Location": "Mysur"
+      },
+      "Salary": 78000
+    },
+    "2": {
+      "Age": 29,
+      "Department": "Dev",
+      "Name": "Sujit",
+      "Office": {
+        "Floor": 2,
+        "Location": "Mysur"
+      },
+      "Salary": 82000
+    },
+    "3": {
+      "Age": 26,
+      "Department": "QA",
+      "Name": "Manas",
+      "Office": {
+        "Floor": 1,
+        "Location": "Pune"
+      },
+      "Salary": 76000
+    },
+    "4": {
+      "Age": 26,
+      "Department": "Prd",
+      "Name": "Roshan",
+      "Office": {
+        "Floor": 1,
+        "Location": "Kolkata"
+      },
+      "Salary": 46000
+    },
+    "5": {
+      "Age": 28,
+      "Department": "QA",
+      "Name": "Satya",
+      "Office": {
+        "Floor": 1,
+        "Loaction": "CHN"
+      },
+      "Salary": 89000
+    }
+  }
+}

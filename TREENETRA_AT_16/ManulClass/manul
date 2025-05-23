@@ -1,0 +1,552 @@
+what is a s/w?
+what is a program?
+
+Types of s/w
+
+1.system s/w
+    Device drivers, operating system, server, utilities etc.
+2.Programming s/w
+    Complier,Interpeter, Debugger etc...
+3.Application s/w
+    web application, destop app, mobile app
+
+what is sw testing?
+
+
+
+X bank-------> IT company-------->develope s/w------>Test(Quality check) s/w------------------------>Delivery
+                (Req)                                 (req fullfillment)
+                (time)                                 (On time and Budget) ---- analysis(BA)
+                (Budget)                                (Quality check based on req)
+                (Review--- update)
+
+s/w quality parameter?
+
+bug free
+delivered on time
+within budget
+meet requirements and expectation
+maintainable.
+
+class-2
+-------
+Project vs Product
+
+
+X company ----- IT C--- RT---PL
+
+Error ,bug/defect, failure
+
+2+3  5   10
+
+why the s/w has bugs?
+
+call
+
+
+SDLC:
+    RA/G
+        SRS
+            1.Intro(Abbrevation)
+            2.Overall Description
+                1.Product Prespective
+                2.Product features
+                3.User classes and Characterstics
+                4.Operating Enviroment
+                5.Constraints
+                6.Assumptions and Dependencies
+
+            3.system Features
+                1.feature name
+                2.feature description
+                3.priority(H,M,L)
+                4.input and outpout
+                5.actions
+                6.Error handeling
+
+            4.External Interface Req.
+                1.UI Int :-
+                2.H/W int:-
+                3.S/w int:-
+                4.communication int:-
+
+            5.System Req.
+                functional Req.
+                Non-Functional req.
+                    Performance:- speed, response time, resource usage
+                    Security:- Access Control, data protection
+                    Usability:- Ease of use ui
+
+
+id:- BSS_REQ-001,REQ-002,REQ-003
+Requirement title:- (USER login, Dashboard, Setting)
+Description
+Priority(HIGH,Meddium,low)
+Type
+Source
+Status
+Assign to
+Dependencies
+Version
+Test Cases
+Accetance Criteria
+
+
+func--001
+
+
+Protype--->Customer ---->Design--->Coding --- Testing
+--->
+
+V- Model/ VV-Model
+
+
+Level of testing?
+ unit testing--- code level
+
+ tech
+
+ Basic path testing
+ contro str. testing
+    conditional coverage
+    loop testing
+ mutation testing
+
+
+ with open(file_path_name,'r') as file:
+    data = file.read()
+    vowels = 'AEIOUaeiou'
+    for i in data:
+        if i in vowels:
+           print(i)
+
+chandra sekhar
+a
+a
+e
+a
+
+
+Integration Testing
+
+System Testing
+    GUI  Testing
+
+    usablity testing
+
+    Functional Testing( Customer Req fullfill)
+
+            Objective Properties Testing
+            Database testing
+            Error handeling Testing
+            Calculation/ manipulation Testing
+            Link existance and Link Execution Testing
+                    internal links
+                    external link
+                    broken links
+
+            Cookies and Sessions Testing
+
+    Non Functional Testing( Customer exp fullfill)
+
+        Performance
+            Load Testing
+            Stress Testing
+            Volume Testing
+        Security
+
+        Recovery
+        Configuration and Insllation
+        Sanitation/garbage
+
+Bug Life Cycle:- (ticketing tool --- jira)
+----------------
+tester -- find bug, in dev app
+
+New :- tester --- descrption,step to reproduce, severity
+
+Assigned
+
+Open /Inprogress
+
+Fixed
+
+Retest
+
+Verify
+
+closed
+
+Reopen
+
+
+smoke Testing and Sanity Testing
+------------------------------
+
+new project ---- lld hld --- release (build)--- testing -- overal testing --- first i setup the env ---application install
+
+1  --- unstable  -stable
+2  --- unstable -- stable
+3 --- unstable --- stable
+4 --- unstable -- stable
+5 --- unstable -- stable
+6 --- unstable -- stable
+7 --- unstable  -- stable
+8 --- unstable
+9 --- unstable
+10 --- unstable
+
+Sanity Testing
+
+Ad-hoc
+
+
+unit testing
+integration
+
+sysytem
+    document
+    smoke trsting ---- install   - build
+    Sanity Testing --- high level--- build
+    Unit regression --- lld test -- build
+    Reg test ---- all feature lld test
+    full regression testing ---- --------whole app
+
+    UAT --- user acce test
+
+    Production
+
+EXp
+Ad-hoc
+hotfix
+
+SDLC -- testing phase(STLC)
+
+Requirement Analysis----SRS(func - and non fuc
+
+Test Planning
+
+Test Case Development
+
+
+Env Setup
+
+Test Execution
+
+Test Closer
+
+
+RTM, (Test coverage)
+Matrix
+
+Test senario
+
+Test File
+
+
+Test cases
+
+
+assert
+
+
+verify
+
+exp res == outcome res
+
+----------
+------------
+
+-----  ---- log file why filed
+-----
+---
+
+-----
+
+fucn1
+    assert  --logc
+    asset2
+    assert3
+
+verify1
+
+
+fuc2
+
+v2
+
+fuc3
+
+
+fuc4
+
+
+
+
+
+
+
+functionality
+
+
+login
+
+    username  --- the usename text
+    password    the password text
+    submit      click()
+
+2 positive test (test data)
+negetive test(test data)
+
+
+def f1()
+a+b = ?
+
+----
+----
+----
+
+actual outcome == expected
+
+
+username
+
+pass
+
+submit
+
+
+End to end testing
+---------------
+
+GenAI
+Cotportli -- LLT -- use case
+
+(L10N)
+
+ECP:-
+
+0%   --- 100%
+
+18 --- 60
+
+0  ----- 60----- 30
+
+18 --- 60 valid
+>18 ---invalid
+<60---- invalid
+
+30
+
+10 --- 30
+
+30 -- 60
+
+18-------- 60
+
+Low Boundary
+---Just below the boundary - 17(invalid)
+---Eaxct boundary----- 18(valid)
+--Just above the boundary---19(valid)
+
+
+Upper Boundary
+    --- just below the boundary--- 59(valid)
+    Exact bound-- 60(valid)
+    just above boundary -- 61(valid)
+
+
+
+What is Test Plan?
+
+meeting----- plan document(Strategy(no of fucntionality),Scope,Approch(step of functionality))-- roadmap
+
+Introduction
+Scope of Testing:-
+Test Strategy:-
+Test Env:-
+Test Deliverables
+Schdule :-
+Roles and Responsibility
+Approval :-
+
+HOW to create a test case.
+
+excel, jira ,
+
+Build :-  Functionlity
+
+Test Case ID:-
+Test case Name :-
+module/d=feature
+Test case Description
+Pre-Condition:-
+Test Steps
+Test data
+Expected Result
+Outcome Result / Actual
+Status :- Pass/fail
+Priority
+Severiry
+Test Env
+Type Testing
+Assuged To
+Test exc Date
+Requirement ID
+
+
+RTM:-
+-----
+SRS(1):-     Test senarion(Test Plan) ----- Test case(20)
+
+Login
+Requirement ID       Req Des            TestCase ID    Test Statius    Defect ID
+
+
+Test Env Setup:
+
+SUT :- Systrem under test :- Ui/api
+
+Test data :- client (validate)
+
+Env validation :- data
+
+Install tools :- selenium, python, requests, pytest, mysql,aws(boot3)
+
+Build install :- smoke
+
+sanity test
+
+Automation ENV setup :
+
+Reqrequistites :- Python , PIP, vesrion control(GIT)
+
+Tools and Lib for UI and API Testing
+UI:- Selenium or Playwright
+API :- Requets
+Test Framework :- Pytest and robot
+Report :- html,allure
+
+In env setup framework :- and setup framework folder staructure
+
+use case --- test senario---test case (application/build)---(functionality)--sub field ---succesor
+
+application (signup-login-dashboard)
+
+1----------10.70sec 2----------12.89 3 ------------9.91 400  - overal failed
+
+1------- 13 2---------------7 --------------5
+
+
+tata1mg
+
+login :-
+
+username -- textfield   (email)
+email field
+length -- min and max
+email validation
+empty
+wrong email
+
+name.surename@domain.com
+
+11
+7
+5
+8
+1
+.com
+.in.i
+
+n@d.c
+
+
+
+ATM machine
+Use case
+
+enter the atm card
+
+language
+
+Saviung, current
+
+Internation , Dom
+
+Withdraw, Deposite
+
+ammount
+
+pin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+password --- testfield
+min and max
+pass accept char
+pass match with username
+empty
+
+email format
+
+
+
+submit ---- clickbutton
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

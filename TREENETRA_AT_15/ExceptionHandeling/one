@@ -1,0 +1,15 @@
+line of code---logics--- flow control
+issues ---- error and exception
+
+flow control ---- some distrubtion(any reason) have affected to stop the interpeter flow know as issues and its
+show in log file.
+
+error  ---- human issues :- not follow the language rules and regulation (Syntax Error)
+
+exception :- some unwanted event(logical issues) that distrube the flow, know as exception.
+its know as run time error.
+
+in python everything is an object, and python is working in interpeter, when exception is arise
+that time, its break the flow and raise issue in console bar. and its stop the execution.
+
+exception handeling :-

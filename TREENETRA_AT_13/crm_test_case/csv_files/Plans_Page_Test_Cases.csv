@@ -1,0 +1,22 @@
+Test Case ID,Test Case Title / Name,Module / Feature,Test Case Description,Pre-Conditions,Test Steps,Test Data,Expected Result,Actual Result,Status (Pass/Fail),Priority,Severity,Test Environment,Test Type,Assigned To,Test Execution Date,Defect ID (if applicable),Comments / Notes,Automation Status,Requirements ID / Traceability
+TC01,Verify Display of Current Plan,Plans Page,Verify that the current plan details are displayed correctly with options to upgrade or downgrade.,User is logged in and on the Plans page.,"1. Open the Plans page.
+2. Check the details of the current plan displayed.",,Current plan details are displayed correctly with accurate information.,,,High,Critical,Web Browser,Functional,,,,,,
+TC02,Verify Available Plans Display,Plans Page,"Verify that all available plans (data-only, talk-time, bundled offers) are displayed with appropriate details.",User is logged in and on the Plans page.,"1. Open the Plans page.
+2. Review the list of available plans displayed on the page.",,"All available plans are displayed with correct details including name, price, and features.",,,High,Critical,Web Browser,Functional,,,,,,
+TC03,Verify Plan Selection Functionality,Plans Page,"Verify that the ""Select Plan"" button works and allows the user to choose a plan.",User is logged in and on the Plans page.,"1. Open the Plans page.
+2. Click on the ""Select"" button for any plan.
+3. Verify the plan selection process.",,"Plan selection is successful, and the user is able to proceed to the confirmation step.",,,High,Critical,Web Browser,Functional,,,,,,
+TC04,Verify Compare Plans Feature,Plans Page,"Verify that the ""Compare Plans"" feature allows side-by-side comparison of multiple plans.",User is logged in and on the Plans page.,"1. Open the Plans page.
+2. Click on the ""Compare Plans"" option.
+3. Select multiple plans and verify the comparison table.",,Compare Plans feature works and displays the selected plans side by side with accurate details.,,,High,Critical,Web Browser,Functional,,,,,,
+TC05,Verify Plan Upgrade Process,Plans Page,Verify the process of upgrading the plan from the current plan.,User is logged in and on the Plans page.,"1. Open the Plans page.
+2. Click on the upgrade option for the current plan.
+3. Follow the steps to complete the upgrade.",,Plan upgrade process is completed successfully with confirmation.,,,High,Critical,Web Browser,Functional,,,,,,
+TC06,Verify Plan Downgrade Process,Plans Page,Verify the process of downgrading the plan from the current plan.,User is logged in and on the Plans page.,"1. Open the Plans page.
+2. Click on the downgrade option for the current plan.
+3. Follow the steps to complete the downgrade.",,Plan downgrade process is completed successfully with confirmation.,,,High,Critical,Web Browser,Functional,,,,,,
+TC07,Verify Proceed Button Functionality,Plans Page,"Verify that the ""Proceed"" button works correctly after selecting a plan.",User is logged in and on the Plans page.,"1. Open the Plans page.
+2. Select any plan.
+3. Click on the ""Proceed"" button to confirm the selection.",,Proceed button works and directs the user to the confirmation step after selecting a plan.,,,High,Critical,Web Browser,Functional,,,,,,
+TC08,Verify Price Display for Each Plan,Plans Page,Verify that the price for each plan is displayed accurately.,User is logged in and on the Plans page.,"1. Open the Plans page.
+2. Verify the price of each plan displayed on the page.",,Prices for all plans are displayed accurately on the page.,,,High,Critical,Web Browser,Functional,,,,,,

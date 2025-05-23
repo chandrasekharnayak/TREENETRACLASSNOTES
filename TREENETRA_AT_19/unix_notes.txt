@@ -1,0 +1,113 @@
+1. Introduction To Unix / Linux
+
+History
+
+Unix was developed in the 1960 at AT&T bell labs by  Ken Thompsom & Denis Ritcheile
+C lang
+BSD,System V, Solaries,AIX,HP-UX
+1991 Linux Torvalds :- Linux is a unix-like os, GNU
+Open-source  - Ubuntu, Red Hat, Fedora, Debian, Kali
+
+
+Arch - Unix
+
+kernel:-  Core part of the os,Manage Hardware and system resources.
+shell  :- Interface between user and kernel.
+File system :- hirearchical structure managing data storage
+Utilities and commands:- pre-build tools to perform action
+
+
+Features of Unix OS:-
+--------------------
+Multi-user
+Multitasking
+security:- file, user-level per
+Command based intercae :- CLI
+Networking support :- built-in networking utilities
+
+
+Unix and Linux
+
+Unix
+1.Proprietary(mostly - single user)
+2.commericial
+3.Solaris,Hp-UX,AIX
+4.Limited to specific system
+5. Os
+
+
+
+
+
+
+Linux
+Open source
+Free
+Ubuntu,Kali,Read Hat, debian, fedora
+Support a wide range of hardware
+Kernel
+
+
+Unix shell
+
+Shell :- It is a cLI that translate user commands into kernel instrction
+
+sh (Bourne shell) :- original shell, simple and lightweight
+bash (Bourne again shell)  :- enhance version of sh, linux
+ksh (korn shell) :- combine feature sh,csh, unix scrpting
+csh( C shell)
+zsh ( z shell)
+
+class:2
+---------
+pwd :- Get the full path of current working directory
+whoami :- username of the users logged in at the terminal
+who :- List of all the users currently logged in as a user
+hostname :- display hostname of the system
+hostname -f :- full info about the hostname
+last :- who recently used the system
+last root :- when was the last time root logged in a user
+
+view running process
+------------------
+ps :- show process of the current shell
+ps -e :- show all running process
+ps -ef :- full format list of all process
+pstree :- display process as a tree strcture (server)
+top :- Real-time view of system process and resource usage
+htop (server)
+jobs:-list background jobs in current shell (server)
+
+server/cloud
+
+Kill or Terminate Process
+------------------------
+kill PID :- Terminate a process by its PID
+kill -9 PID :- force kill a process
+
+
+Moniter CPU and Memory usage
+----------------------------
+top
+vmstat :- Report memory, CPU, I/O stats
+free -m :- show memory usage in MB
+uptime:- show how long the system has been running and the load avg.
+
+show current date and time
+--------------------------
+date :- display the current date and time
+date "+%Y-%m-%d %H:%M:%S" :- custom format
+cal
+cal 2025
+cal 02 2024
+ncal
+
+Directory navigation
+Listing files inside a directory
+File/directory create , copy and remove
+File/Directory permisiion and groups permission changes
+
+
+
+
+

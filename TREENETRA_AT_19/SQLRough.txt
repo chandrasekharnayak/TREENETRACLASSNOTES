@@ -1,0 +1,813 @@
+RDBMS --
+Oracle
+Mysql Server
+Postgresql
+Sqlite3
+
+Mysql is a RDBMs-- where will store data in a tabular format
+
+SQL Language format
+
+DDL :- Data Defination Language (Used to define and modify database strctures like table , indexes and schemas) -- 10%
+CREAT, ALTER, DROP, TRUNCATE, RENAME
+Notes :- DDL all commands are auto commited.
+
+DML :- Data Manupulation Language(Used to manage data within a tables) -- its working in row level. --- 90%
+Insert, Update, delete
+Insert :- add the data in a row.
+Update :- update the row data in a table.
+delete :- delete a specific row in a table.
+
+Note :- we nedd to commit the DML data. coz its not a auto commited
+
+Select :- based on req. will fetch the data from the table.
+
+
+#Admin- DB admin
+DCL:- Data Control Language(database):- (Used to control access to data in a database)
+
+Grant :- Permission
+REVOKE :- return permission
+
+
+TCL :- Transaction Control Language
+
+Commit--save
+Rollback-- undo
+Savepoints
+-------------------------------------
+Mysql Datatypes
+-----------
+
+Interger Datatype
+------------------
+
+1.Int (Integer)(4bytes) :- Range :- 9999,7877,234,121,
+2.TINYINT(1byte)        :- 128 to 127 ( 0 to 255)
+3. BigInt (8 Bytes) --8 quintillion 999999999
+
+Decimal and Floating point
+------------------------------
+
+1.Decimal(p,d)  --- high  1.22222665645356453456754325647646545345353
+2.Float-- low - 1.21, 7.0
+3.Double 1.22, 8.99, 7.67
+
+
+
+
+3.String Data types
+--------------------
+
+CHAR(n) --- Fixed (0-255)
+varchar(n) -- variable length (0,65,535)
+BLOB -- binary data(image,files)
+
+4.Date and Time data types
+---------------------------
+DATE Format (YYYT-MM-DD)
+DATETIME (YYYY-MM-DD HH:MM:SS) (no time zone)
+TIMESTAMP simliar as datetime but store UTC
+TIME (HH:MM:SS)
+YEAR (YYYY)
+
+
+
+5. BOOLEAN
+----------
+BOOLEAB :- Stote TinyInt(1) (0=False, 1 True)
+
+
+
+Class:-3
+---------
+1.Mysql connect to terminal
+2.Mysql how to connect with Workbench
+3.Mysql create the database and tables.
+
+how to create a table in mysql?
+syntax
+
+create table table_name (
+    columns_name1 datetype,
+     column_name2 datatype,
+     ..
+     ...
+     ...);
+
+
+create table employee(
+    emp_id int,
+    emp_name varchar(20),
+    emp_salary int,
+    emp_address varchar(50)
+    );
+
+
+
+How to run select query?
+-------------------------
+
+select * from table_name;
+
+*-- all
+
+insert the data in a table ?
+----------------------------
+
+insert into table_name (cl1,cl2,cl3,cl4....) values (v1,v2,v3,v4);
+
+single data
+insert into employee(emp_id,emp_name,emp_salary,emp_address) values (100,'Vivek',67000,'Gopalpur');
+
+multiple data
+
+insert into employee
+(emp_id,emp_name,emp_salary,emp_address)
+ values
+(101,'Sahil',87000,'Bihar'),
+(102,'DJ',91000,'Jharkhand'),
+(103,'Subhasish',96000,'Bhadrak'),
+(104,'Pandav',98000,'Odisha'),
+(105,'Jitendra',99000,'Jagatsighpur'),
+(106,'DQ',67000,'Kerla');
+
+
+Update :- update a row based on condition
+syntax
+
+single clmn
+------------
+update table_name
+set colmn_name = value
+where condition;
+
+multi clmn
+----------
+update table_name
+set colmn_name1 = value1, colmn_name2 = value2,colmn_name3 = value3
+where condition;
+
+ ex
+
+ update employee
+ set emp_address = 'Odihsa'
+ where emp_id = 100;
+
+update employee
+set emp_address = 'Odisha'
+where emp_id >103 and emp_salary>90000;
+
+update employee
+set emp_name = 'Satya', emp_salary=78000 , emp_address='Odisha'
+where emp_id = 106;
+
+ delete
+
+ delete from table
+ where condition
+
+delete from employee
+where emp_id =101;
+
+
+how create a db?
+how to switch in db?
+how to check how many db in present in mysql server
+check how many tabales present in db?
+create table in database
+insert
+update
+delete
+how check the data in a table(all data) --- select
+
+class 4
+--------
+
+drop :-Deletes the entire database or table permanetly, including structure and data
+
+1.remove the table data(rows) with table strcture.(cln) -- delete the entier table.
+2. table delete permentaly :- rollback is not possiable
+3. drop remove the table as well as database.
+
+
+drop table table_name;
+drop database database_name;
+
+
+Truncate :-Removes all rows from a table but keeps the table strcture intact.
+
+its delete only the table datas(rows). not affect the table strcture.
+truncate table table_name;
+
+
+Rename:- rename table , old table to new table
+------
+
+rename table old_name_name to new_table_name;
+
+ALTER:-
+-----
+Modifies the strcture of an existing table .(cln)
+1.Add a new cln
+
+alter table table_name add cln_name cln_data_type;
+
+2.drop a cln
+alter table table_name drop column cln_name;
+
+3.rename a cln
+
+alter table table_name change old_cln_name new_cln_name data_type;
+
+
+
+column strcture :- roll back is not possiable
+create
+alter
+drop
+truncate
+rename
+
+
+insert
+update
+delete
+
+
+select
+
+
+--------
+grant revoke
+savepoint rollback
+
+
+
+drop vs truncate vs delete
+
+
+Features              drop                  truncate                          delete
+
+purpose             remove table         Remove all rows, keep strcture      removes specific rows based condition
+                    (strcture+data)
+
+
+removes data?          yes                      yes                                 yes(condition)
+
+removes table strcture  yes                      No                                   No
+
+Rollback?                No                     No                                      yes
+
+where?                  No                      No                                      yes
+
+speed               Fastest                 Faster the delete                           slower(row-by-row delete)
+
+best use casw     when table is             To quickly clear a table all data           To remove specific records
+                  no longer needed
+
+
+What is Constrainst in Mysql?
+
+Constrainst are rules applied to table columns to enforce data integrity, consistency and accuracy. These Constrainst restrict the type of data
+that can be inserted into a table, prewventing invalid or inconsistent data entries.
+
+Constrainst provide a way to connect with other table with help primary key and foriegn key.
+
+types of Constrainst:-
+6 Types
+
+-- create table employee(
+--     id int unique auto_increment,
+--     email varchar(20) unique not null,
+--     age int check (age>=20),
+--     status varchar(20) default 'Unavailable'
+--     );
+
+1.Not Null
+ Ensure that a column cannot store null values
+ used when a column must always have a value
+
+ -- create table employee(
+--     email varchar(20) unique not null,
+
+2.Unique
+    Ensure all values in a column are distict
+    A table can have multiple unique values
+
+    -- create table employee(
+--     email varchar(20) unique not null,
+
+3.Primary key
+
+4.Foreign key
+
+5.Check:-
+    Ensure values in a column satisfy a specific condition.
+
+    -- create table employee(,
+--     age int check (age>=20),
+--     );
+
+
+6.Default:-
+    Assign a default values to a column if no value is provided.
+
+-- create table employee(
+--     status varchar(20) default 'Unavailable'
+--     );
+
+But in mysql one more Constrainst is their
+
+7.Auto_increment
+    Automatically generate a unique number for a column whne a new record is inserted.
+    Used mostly in PK.
+
+    -- create table employee(
+--     id int unique auto_increment,
+--     );
+
+
+
+create table employee(
+    id int unique auto_increment,
+    email varchar(20) unique not null,
+    age int check (age>=20),
+    status varchar(10) default 'Unavailable'
+    );
+
+
+
+insert into
+employee (id,email,age,status)
+values
+(1,'a@gmail.com',18,'avl');
+
+
+
+Null  --- kuch nehi hai.
+
+3-1 = 2-1 = 1-1 = 0
+
+
+name  age   salary
+
+a      21     56k
+b      Null   67k
+c     Null    67k
+
+
+oracle sql
+
+null == null
+null != null
+
+
+3.Primary key
+1.a primary use in a table single time in a single coloumn
+2. all records a unique(rows are unq)
+3.this clm no data should in a null postition
+4.primary mainly used to connect with another table FK
+
+create table employee(
+    emp_id int primary key,
+    emp_name varchar(20) not null,
+    emp_dept varchar(20),
+    manager varchar(20)
+)
+
+
+4.Foreign key
+
+1.a FK use in a table multiple time in multiple rows.
+2. all records are may unq or may be not.
+3.this clm ,rows are accepted the null values
+4.FK main used to connect with another table PK.
+
+
+create table manager(
+    mrg_id int primary key
+    manager varchar(20,
+    emp_id int,
+    foreign key (emp_id) references emp(emp_id)
+
+)
+
+
+
+Note:- PK and FK mainly used to connect with each betwee, and connect two or more table.
+
+
+
+employee    -- pk
+
+
+
+
+manager   --,pk---- fk
+
+
+insert into manager (mrg_id,manager,,emp_id)
+values
+(101,'Richa',1),
+(102,'Abhilash',2),
+(103,'Ruchira',6),
+(104,'Shivani',7),
+(101,'Richa',3),
+(101,'Richa',5),
+(105,'Sinu',8),
+(102,'Abhilash',4)
+(106,'Swetank',9)
+(107,'Sanu',10)
+
+
+
+
+
+
+insert into manager (emp_id,emp_name,emp_dept,manager)
+values
+(1,'Ragav','QA','Richa'),
+(2,'Rahul','Dev','Abhilash'),
+(3,'Sudeep','QA','Richa'),
+(4,'Smita','Dev','Abhilash'),
+(5,'Amaln','QA','Richa'),
+(6,'Sahil','Prod','Ruchira'),
+(7,'Kamlesh','QC','Shivani'),
+(8,'Rajiv','QA','Sinu')
+)
+
+
+
+#join
+
+join query join two or more table help pk and FK, and its acreate another virtual table to show combination of data of both the data.
+
+1st_tabel:-emp_id ,emp_name ,emp_dept ,manager
+2nd_atable:- mrg_id,manager,emp_id
+
+select 1st_table.emp_id,1st.emp_name,1st.emp_dept,2nd_table.mrg_id ,2nd_table.manager
+from employee 1st_table
+join manager 2nd_table on 1st_table.emp_id = 2nd_table.emp_id;
+
+
+select e.emp_id,e.emp_name,e.emp_dept ,m.mrg_id,m.manager
+from emp e
+join manager m on e.emp_id = m.emp_id
+
+
+---------------
+-- show databases;
+
+-- use AT18;
+
+-- create table employee(
+--     id int unique auto_increment,
+--     email varchar(20) unique not null,
+--     age int check (age>=20),
+--     status varchar(20) default 'Unavailable'
+--     );
+
+-- insert into
+-- employee (id,email,age,status)
+-- values
+-- (1,'a@gmail.com',21,'avl');
+
+-- insert into
+-- employee (email,age)
+-- values
+-- ('b@gmail.com',21);
+
+-- insert into
+-- employee (email,status)
+-- values
+-- ('c@gmail.com','avl');
+
+-- select * from employee;
+-- --------------------------------PK and FK-------------------------
+-- create table emp(
+--     emp_id int primary key,
+--     emp_name varchar(20) not null,
+--     emp_dept varchar(20),
+--     manager varchar(20)
+-- )
+
+-- create table manager(
+--     mrg_id int,
+--     manager varchar(20),
+--     emp_id int,
+--     foreign key (emp_id) references emp(emp_id)
+
+-- )
+
+
+
+-- insert into emp (emp_id,emp_name,emp_dept,manager)
+-- values
+-- (1,'Ragav','QA','Richa'),
+-- (2,'Rahul','Dev','Abhilash'),
+-- (3,'Sudeep','QA','Richa'),
+-- (4,'Smita','Dev','Abhilash'),
+-- (5,'Amaln','QA','Richa'),
+-- (6,'Sahil','Prod','Ruchira'),
+-- (7,'Kamlesh','QC','Shivani'),
+-- (8,'Rajiv','QA','Sinu')
+
+-- SELECT * FROM EMP;
+
+-- insert into manager (mrg_id,manager,,emp_id)
+-- values
+-- (101,'Richa',1),
+-- (102,'Abhilash',2),
+-- (103,'Ruchira',6),
+-- (104,'Shivani',7),
+-- (101,'Richa',3),
+-- (101,'Richa',5),
+-- (105,'Sinu',8),
+-- (102,'Abhilash',4)
+
+
+-- show tables;
+
+-- select * from manager;
+
+-- select * from emp;
+
+-- join
+
+select e.emp_id,e.emp_name,e.emp_dept ,m.mrg_id,m.manager
+from emp e
+join manager m on e.emp_id = m.emp_id;
+
+
+Joins
+-----
+SQL joins are used to combine data from two or more tables based on related column between them. join allow efficent querying and retrival of related data without reduncacy.
+
+> it's create a kind of imaginary or vitual  table to show the end user.
+
+
+Why do we use SQL joins?
+
+1.To retrive the relataed data.
+    Instead of storing all data in one large table (which is couse of data redundancy), we normalize it into multiple tables.
+
+2.To improve performace.
+    Querying smaller, normalized tables with joins is often faster than queryinmg a single large table with duplicated data.
+
+3.To maintain Data integrity
+    using foreign keys and joins  ensures consistency in relational database
+
+ types join
+ ----------
+ inner join
+ left join (left outer join)
+ right join (right outer join)
+ Full outer join
+ Cross join
+ Self join
+
+
+
+ 1.inner join:-  the inner join return rows that have matching values in both tables.
+
+select e.emp_name,m.manager_name
+from employees1 e
+inner join manager1 m
+on e.manager_id = m.manager_id;
+
+
+ left join (left outer join) :- the left join return all rows from left table (employees1) and matched rows from the right table (manager1) . Unmacted rows will have nulls.
+ -- select m.manager_name,e.emp_name
+-- from employees1 e
+-- left join manager1 m
+-- on e.manager_id=m.manager_id;
+
+Right join :- the right join return all rows from right table(manager1, and matched row from left table(employees1).Unmatched rows will have nulls
+
+select m.manager_name,e.emp_name
+from employees1 e
+right join manager1 m
+on e.manager_id=m.manager_id;
+
+
+Full oter join :- The full join return rows when there's a match one of tabels, Unmatched rows in either table are included with NULLS.
+
+Full outer join directly not supported by MYSQL, so we will merge left with right join or right with left join.
+
+select e.emp_id,e.emp_name,m.manager_name
+from employees1 e
+left join manager1 m
+on e.manager_id=m.manager_id
+union
+select e.emp_id,e.emp_name,m.manager_name
+from employees1 e
+right  join manager1 m
+on e.manager_id=m.manager_id;
+
+
+CROSS JOIN:- The Cross join return a Cartesian Product, meaning every row in first table is paired with every row in the second table.
+
+
+select e.emp_name,m.manage_id,m.maganer_name
+from employees1 e
+cross join manager1 m
+
+A     A     Lokesh
+B     B     Syresh
+      C     Ramesh
+      D     Subhash
+
+AA
+AB
+AC
+AD
+BA
+BB
+BC the self join join a table to itself.,
+BD
+
+
+self join:-
+
+select e1.emp_name as Employee , e2.emp_name as Manager
+from employees1 as e1
+left join employees1 e2
+on e1.manager_id = e2.emp_id;
+
+select * from employees1;
+select * from manager1;
+
+
+Filtering and Sorting Data use in MYSQL
+> where Clause
+> Operator
+> Order by (Ascending and Descending)
+> Limit and Offset
+> Group by and Having
+
+
+
+
+#Filtering and Sorting the data.
+#where clause :- The where clause filters rows based on specified conditions. It can user Various comparision and logical operator
+
+-- Comparision operator
+-- = (Check for equality)
+-- != (Check for inequality)
+-- > (greater than)
+-- < (less than)
+-- >= (greater than or equal to)
+-- <= (less than or equal to)
+
+
+-- Logical operator
+-- and(Combine multiple condition, all of which must be True)
+-- or(Combine multiple condition. atleast one of them which must be True)
+-- between(Chcek if a values falls within a range)
+-- in(Check if a value is in a list of values)
+-- like (Match patterns using wildcard (% for multiple chars, _ for a single char)
+
+
+-- show databases;
+
+-- use AT18;
+
+-- create table emp_filtering(
+--     emp_id int primary key,
+--     emp_name varchar(20) not null,
+--     emp_age int,
+--     emp_dept varchar(20),
+--     emp_salary int
+--     );
+
+-- show tables;
+
+-- insert into emp_filtering (emp_id,emp_name,emp_age,emp_dept,emp_salary)
+-- values
+-- (1,'Ragav',32,'Dev',80000),
+-- (2,'Rohan',24,'Dev',76000),
+-- (3,'Adarah',28,'QA',88000),
+-- (4,'Chakra',21,'Prod',34000),
+-- (5,'Surya',27,'QA',110000)
+
+-- insert into emp_filtering (emp_id,emp_name,emp_age,emp_dept,emp_salary)
+-- values
+-- (6,'Radhika',29,'Devops',78000),
+-- (7,'Mirya',27,'QA',79000)
+
+
+-- select * from emp_filtering;
+
+-- = (Check for equality)
+
+-- select * from emp_filtering
+-- where emp_dept ='QA';
+
+-- select * from emp_filtering
+-- where emp_dept !='QA';
+
+-- select * from emp_filtering
+-- where emp_salary <=88000;
+
+-- and
+
+-- select * from emp_filtering
+-- where emp_dept = 'Dev' and emp_age>=30;
+
+-- select * from emp_filtering
+-- where emp_dept = 'QA' or emp_name like 'Z%';
+
+-- select * from emp_filtering
+-- where emp_age between 25 and 30;
+
+-- select * from emp_filtering
+-- where emp_id in (2,3,4,6);
+
+-- select * from emp_filtering
+-- where emp_name like 'Ra%';
+
+select * from emp_filtering
+where emp_name like '%ya';
+
+
+Sorting the data.
+----------------
+
+order by (ascending and descending the data) -- ASC. DESC
+
+The order by clause is used to sort the result set by one or more columns.By default ,sorting is done in ascending order
+
+select * from emp_filtering
+order by emp_age asc;
+
+
+Limit :- Limit is used to restrict the number of rows retuned in the result set.
+offeset :- offset skip a specified number of rows before starting to return rows, when used together , yiu can paginate results.
+
+
+Group By and Having
+---------------------
+Group by used to group rows that have the same values in specified columns, It is commonly used with aggregate function (COUNT,SUM,AVG,MIN,MAX) to summarize data
+
+Having :- Having is similar to the WHERE caluse but opeartoes on grouped data, while WHERE filters row before grouping, HAVING filter after grouping.
+
+
+
+Aggregate function :-(Count,SUM,AVG,MAX,MIN)
+
+as :- alias ---- provide virtual table name
+
+
+SQL
+
+PLSQL
+function, CTE,Window, View, Index, Proceedure, Trigeer
+
+
+select * from emp_filtering
+-- order by emp_salary asc;
+
+-- select emp_name,emp_age from emp_filtering
+-- order by emp_salary desc;
+
+#Limit and Offset
+
+-- select * from emp_filtering
+-- order by emp_salary desc
+-- limit 3;
+
+-- select * from emp_filtering
+-- order by emp_salary desc
+-- limit 1 offset 2;
+
+select * from emp_filtering;
+
+-- select count(emp_id), emp_dept
+-- from emp_filtering
+-- group by emp_dept;
+
+select * from emp_filtering;
+
+-- select max(emp_salary),emp_dept
+-- from emp_filtering
+-- group by emp_dept
+-- having emp_dept ='Dev';
+
+
+select avg(emp_salary) as TotalQASalary
+from emp_filtering
+group by emp_dept
+having emp_dept='QA';
+
+select count(emp_id) , manager_name
+from table_name
+group by manager_name;
+
+
+SET
+Sub Query
+Database connect with backend Language (Python)
+
+Database question Prac--- 30+
+

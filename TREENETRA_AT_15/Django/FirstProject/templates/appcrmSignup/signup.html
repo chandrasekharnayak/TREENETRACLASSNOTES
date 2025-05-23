@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <h1>Singup</h1>
+    {% if messages %}
+        {% for i in messages %}
+            <p style="Color:red;">{{i}}</p>
+        {% endfor %}
+    {% endif %}
+
+    <form method="post">
+        {% csrf_token %}
+        <label>Username:</label>
+        <input type="text" name="username" required><br>
+        <label>Email:</label>
+        <input type="email" name="email" required><br>
+        <label>Password:</label>
+        <input type="password" name="password" required><br>
+        <label>Confirm Password:</label>
+        <input type="password" name="confirm_password" required><br>
+        <button type="submit">Signup</button>
+    </form>
+
+    <a href="{% url 'login' %}">already have a account. login</a>
+
+</body>
+</html>

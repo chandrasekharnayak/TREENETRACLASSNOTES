@@ -1,0 +1,20 @@
+INFO:root:Start the execution
+ERROR:root:division by zero
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\TreenetraClass\ExceptionHandeling\exception_handeling.py", line 60, in divide
+    result = x/y
+             ~^~
+ZeroDivisionError: division by zero
+ERROR:root:unsupported operand type(s) for /: 'int' and 'str'
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\TreenetraClass\ExceptionHandeling\exception_handeling.py", line 60, in divide
+    result = x/y
+             ~^~
+TypeError: unsupported operand type(s) for /: 'int' and 'str'
+INFO:root:Start the execution
+ERROR:root:division by zero
+Traceback (most recent call last):
+  File "C:\Users\admin\PycharmProjects\TreenetraClass\ExceptionHandeling\exception_handeling.py", line 60, in divide
+    result = x/y
+             ~^~
+ZeroDivisionError: division by zero

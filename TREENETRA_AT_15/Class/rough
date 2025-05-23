@@ -1,0 +1,36 @@
+pops :-
+oops:- object oriented programming-- object is primary -- everything is an object-
+who have a phy location and have id know as a object.
+in python var, fun, class, modle thease are the object.
+
+1991-- pops
+2000 -- py 2.0 -- oops ---- but synatx pops.
+
+class is a object. create a blueprint or plan to make a procedure.
+
+collection the functionality in such a manner , being all functionality return a complete product
+
+class is a collection functions and variable.
+
+car --- object
+    gear-- function
+    acc
+    clutch
+    break
+    glass
+    >
+   >
+
+
+function:
+    return --- data var-- object
+
+class ClassName:
+    '''doc_string'''
+    methdos
+
+
+def --- single decalre --- function
+
+class:
+    def --- methods--

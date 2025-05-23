@@ -1,0 +1,43 @@
+python3 -m venv path/to/venv
+source path/to/venv/bin/activate
+python3 -m pip install xyz
+
+to create a project
+
+djnago-admin startproject projectName
+
+manage.py :- manage the django server.
+This is a CLI utility for interacting with djnago project
+
+python manage.py runserver-- start the dev server
+python manage.py migrate-- Database migrations
+python manage.py createsuperuser-- create an admin user
+python manage.py startapp app_name-- create a new django app
+python manage.py shell:- python shell
+
+asgi.py(Asynchronous server gateway interface)
+----
+ASGI allow django to support asynchronous application run in a server
+asgi is the successor of wsgi and is used handeling cloud server
+
+wsgi(Web server gateway interface)
+----
+VM --- application --- commection
+
+settings.py
+-----------
+Installed app-- list of enbaled djnago app.
+Middleware :- processing HTTP request
+Database setting --- django config with DB
+Static File and media file :- CSS,js,image
+Templates :- UI(Cingure UI directory)
+Security
+
+
+POM --- Separate your each test case in separate basis clas.
+
+project ---
+urls-- seg-- app -1 -- app -2 -- app3
+    app1--- temp-- 70--20
+    app2--- temp ---30
+    app3--- temp--- 40

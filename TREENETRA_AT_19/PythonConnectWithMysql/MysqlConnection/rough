@@ -1,0 +1,7 @@
+json :- java scripts object notation.
+
+[
+{
+'key','value'
+}
+]

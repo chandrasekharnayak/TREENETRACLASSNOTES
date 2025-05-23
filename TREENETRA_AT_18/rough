@@ -1,0 +1,148 @@
+Python
+--------
+
+1. Python is a backend programming language.
+2. Python is a highlevel programming language.
+3. Python is developed by Guido Van Russom , 1989 (abc)
+4. With the help of Perl and C++ ,python was developed.
+5. 1991 feb 20 --- 1.v
+6.  Python is a scripting language
+
+
+application --- frontend(design), backend(logic), database language(DB)
+low(binary num-010101), meddium(converter), high(oops, pops)
+object oriented programming.
+procedure oriented programming.
+
+
+where we can python?
+---------------------
+1. web application developement
+2. desktop application developement
+3.  Web application Automation Testing
+4.  Database application developement
+5.  Database application flow testing
+6.  Machine Learning
+7.  Deep Learning
+8.  Data Analysis
+9. Data science application developement.
+10. AI application dev and test
+11. IOT device application developmenet and Testing
+12. Mobile application automation testing.(appium)
+
+Limitation of Python
+---------------------
+1.Mobile application developement not done by python.
+2.Bank payment gateway security system
+
+
+Feature of Python
+------------------
+1.Python is easy and simple to learn
+2.Python is open sorce and freeware.
+3.Python is a high level programming laguage.
+4.Python is platform independent and portability.
+5.Python is a dynamic typed of language.
+6.It's support both oops and pops.
+7.it's  a  interper language
+8.Extensive lib. (65k+)
+
+
+class-2
+-------
+Idenitifiers :- who belongs the indenity and provide name.
+
+variable, function, class, modules
+
+
+variable is a object who hold a data or store data, variy from object to object
+
+we are a variable ---
+
+everything is a object...
+
+data --- means of chac.
+
+data have physical existnace , have location
+
+what is an object ?
+
+
+
+what is a char :- in keyboard what ever thing we can write know as char. 256
+number
+decimal
+string
+varchar
+date
+
+
+
+
+
+
+Keywords
+
+
+
+var = 10 --- int
+var = 10.78 -- decimal
+var = 'trdy'-- char
+
+
+function ?  --- its wrap the logic
+----------
+logic
+
+logic --- data--- variable
+--
+--
+--
+--
+
+class:- collection function , in such a manner in perticular position.---data
+
+module . -- module is python file.(class, func, var)
+
+rules and regulation :-
+-------------------
+
+1.use upper ,lower , digit and _(underscore)
+2.digit is not start from first
+3.python case senstive language, so idenitifiers as well case senstive
+
+casing
+-----
+camel casing(class) and snake casing(var,func,module)
+
+camel :- upper, lower, digit:- first word first char should be upper and rest lower, also use digit
+
+state bank of india -- 10927
+
+StateBankOfIndia10927
+
+snake:- lower,digit, _ :- everything is a lower char, one word separate another word with help _(underscore)
+
+state_bank_of_india_10927
+
+what is keywords?:- resversed words
+----------------
+there are 35 keywords in python.
+
+['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else',
+ 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise',
+  'return', 'try', 'while', 'with', 'yield']
+
+
+
+
+
+
+
+
+
+
+
+
+
+

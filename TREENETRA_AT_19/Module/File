@@ -1,0 +1,31 @@
+file_1.py---  module
+
+Folder/Directory
+    __init__.py (intialization)
+
+
+normal name
+_ :- private
+__protected
+
+
+project -----  deploy --- cloud, server
+VM :- virtual Machine
+Docker
+
+dependecies :-
+file system
+database
+json
+xml
+html_report
+dataframe
+arrays
+pi_chart
+
+pip :- python installer package
+
+
+inbulid package
+3rd party package(djnago,selenum,pytest,flask,panadas,numpy)
+user define package

@@ -1,0 +1,57 @@
+variable-- hold  data
+function-- data return
+class-- with help of func return dat
+module:- module is a python file(.py), where we can write varibales, functions and classes. module is a workpage of python code.
+
+Advtanges:-
+when we will write code in any module of python, if same code if required in other py file again and agin, not required to write sane
+code again and again.
+
+instaed of writing the code, just call module name help of import keyword.
+
+types of modules?
+----------------
+inbuilt module:- when we installed python, in that python had provide some pre define python file, and those python file already written some logics.
+<database coonection ,email, math, os, time>
+user define module:- those py file are created by the programmer for own logic purpose know as user define module.
+
+math-- mathemetical representation
+os --- opearting system
+sys --- system arguments
+time --- time management
+datetime --- today , yesterday, tomorrow ans custome date and time.
+random -- random otp generation
+
+imp
+----
+csv    ----- file handeling -- csv is handel unix tabular data
+openxl  --- connect python through excel file
+subproces  ---connect server -- for linux ue
+cx_oracle --- connect with oracle database
+mysql -- sql sever connection
+---------------------------------------------------------
+
+packages   :- when we have directory with __init__.py, that directory knowm as packages.
+--------
+__init__.py :- this init file known as intilization file.
+#its support to use in different location--- pip (python installer packages)
+Folder (py files):- UI elemenet locate found and automate
+
+inbuilt
+user define
+outside
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

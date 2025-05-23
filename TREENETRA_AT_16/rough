@@ -1,0 +1,213 @@
+Manul Process -- 17 Amir Sir ---- 100% class
+
+Python :- dev+test (backend logic)  -- 70%
+
+Automation :-
+Selenium(tool)- UI testing _ tushar
+Postman (Manul api Test)
+Request Lib (Automation API testing)
+
+Framework :- Robot and Pytest(Tushar/chandra sekhar)
+
+Development :-
+------------
+HTML,CSS
+FLask :- Create the api -- small application creation
+Django :- Big application deve :- web application dev
+
+Database :- Mysql server -- hiamanshi mam
+
+Python connecto to DB  - chandra sekhar
+
+Unix :- coomand -- server - himanshi mam
+
+Devops :- Docker, GIT, Jenkins
+
+AWS :- EC2,S3,Lambda ---- kaam (Python connect to cloud)-- CS
+
+3.5
+
+20 classes 20--- CS
+
+2 thnings
+
+what is python?
+
+l  m   h  oops, pops
+
+1989 --- Gudio van russom  , Netherland, NRI
+Perl, C++ (abc)
+
+1991 Feb 20 :- Python
+
+
+0  1
+
+
+256 - ASICC--- 1 0
+
+where we can use python
+-----------------------
+
+Webbased development
+Mobile application testing --- appium
+Destop application testing
+Webased application testing
+Desktop application
+Databased application
+Datascience application
+Data Analysis
+AI application
+NN
+IOT
+ML
+DL
+
+
+limitation python
+------------------
+mobile application developement
+Paymnt related aplliacation
+
+
+features of python
+------------------
+1.simple and easy to learn
+2.Free style and open source
+3.High level programming laguage
+4.Portability
+5.PVM use
+6.Dynamically Typed
+7.both oops and pop
+8.Interpereter
+9.Python is an extensive -- 65K+
+
+
+1991 ---- 1.0v--- 2000
+2000-----2.0v --- oops
+2008 --- 3.0v-- 3.13
+
+java compiler ---
+--
+--
+--
+---
+
+platform -- ide
+
+pycharm
+
+reserve words or keywords
+------------------------
+
+['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
+
+
+idenitifiers
+------------
+
+variable
+function
+class
+module
+
+name spaces
+
+Rules to provide the name:-
+
+1.Its take upper, lower ,digit and _
+2.digit can't be start from first
+3. python is a case sensitive so that py name space as well case sensitive
+4. we can not use any other special char in python name spaces.
+
+pep8 :-
+
+casing :- camel case, snake case
+
+camel case:- (ClasName)
+upper,lower and digit
+StateBankOfIndia10927
+
+snake casing(var, fucntion,module
+statebankofindia10927
+lower,_,digit
+state_bank_of_india_10927
+
+--------------------------------------------------------------
+what is variable?
+
+var = data ---- datatype
+var = 10 ---- int <datatype><int>
+var = 'qwerty'<str>
+
+
+datatype:-
+---------
+in python there are 14 types of data avl.
+
+int, float, complex, bool, string, list, tuple, set, frozenset, bytes, bytrearray, dict, range,None
+
+
+What is Class:-
+--------------
+blue print of function, and a collection function
+
+
+
+
+logic :- methodlogy--- program
+
+function:-
+---------
+waraper code  ---- box
+
+current_balance - amount
+rest_amount --------6lines
+
+function --
+
+class Car:
+    function streaing
+
+    function break
+
+    function clustch
+
+    function enginer_power_generate
+
+    function gear
+
+    function seta
+
+
+a = 10 ---- int
+
+class int:
+
+    function
+
+
+number -- -inf   +inf ----- complete and decimal num (Real number)
+
+intger num :- -inf to +inf --- complete == -900 ,9767,567,456 (int)
+
+decimal -- :- -inf to +inf --- . values = -900.0 -67.67, 65.7 (float)
+
+
+complex = Real +imag
+
+-25 -- root  -- i , j , k
+
+boolen :- True   False
+
+
+string:- &*%&%^
+
+
+11111
+22222
+33333
+
+
+
+

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+  <h2>Welcome, {{ user.username }}</h2>
+  <p>Total Active Plans: {{ active_plans_count }}</p>
+  <p>Pending Billing: {{ pending_billing }}</p>
+  <h3>Order History</h3>
+  <ul>
+    {% for order in orders %}
+      <li>
+        Order ID: {{ order.id }} - Status: {{ order.order_status }}
+        (<a href="{% url 'crm:billing_invoice' order.id %}">Pay & Invoice</a>)
+      </li>
+    {% empty %}
+      <li>No orders found.</li>
+    {% endfor %}
+  </ul>
+  <div>
+      <a href="{% url 'crm:select_plan' %}">Select a Plan</a> |
+      <a href="{% url 'crm:order_management' %}">Order Management</a>
+  </div>
+</body>
+</html>

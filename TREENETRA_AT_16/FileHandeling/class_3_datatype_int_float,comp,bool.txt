@@ -1,0 +1,247 @@
+Data Types:-
+----------
+
+Data Type Represnt the type of data present in a variable.
+
+In Python we are not required to specofy the type explicily. Based on Value provoded  the type will be assigned automatically . Hence python is Dynamically typed of laguage.
+
+
+In Python there are 14 types of data is avilable.
+
+1.Integer :- int()
+2.Float   :- float()
+3.Complex :- complex()
+4.Boolean :- bool()
+5.String  :- str()
+6.List    :- list()
+7.Tuple   :- tuple()
+8.Set     :- set()
+9.Frozenset :- frozenset()
+10.Bytes  :-bytes()
+11.Bytearray :- bytearray()
+12.Range  :- range()
+13.Dictionary :- dict()
+14.None   :- None
+
+
+#Garbage Collection
+------------------
+
+UsuallyProgrammer taking very much acre while creating object, but negelaecting destruction of useless object.Because of his neglentace, total memory can be filled with useless object. which creates memory problems.
+
+We have some assistance which is always running in the background to destroy useless object.Because this assitant the chance of falling python program with memory problem is very less. This assistant is nothing but Garbage Collector, process Garbage Collection
+
+>>> a = 10
+>>> type(a)
+<class 'int'>
+>>> 
+>>> 
+>>> b = 'Shardha'
+>>> type(b)
+<class 'str'>
+>>> 
+>>> 
+>>> 
+>>> a = 10
+>>> id(a)
+2084008389200
+>>> type(a)
+<class 'int'>
+>>> 
+>>> 
+>>> a = 'Shardha'
+>>> type(a)
+<class 'str'>
+>>> id(a)
+2084049771568
+>>> 
+
+>>> a = 45.89
+>>> type(a)
+<class 'float'>
+
+
+Python Inbuilt Function:-
+------------------------
+
+type() :- type of data
+id()   :- location of data
+print() :- print the variable of data
+dir():- Fetch Datatype's methods or function
+help():-
+
+ Integer :- int()
+ ----------------
+
+ We can int data type to represnt whole number(integral number) -infinity to +infinity with decimal point call integer or numeric data.
+
+ >>> a = 10
+>>> type(a)
+<class 'int'>
+>>> 
+>>> a = -10
+>>> type(a)
+<class 'int'>
+>>> 
+>>> 
+>>> b = 999999999
+>>> type(b)
+<class 'int'>
+>>> b = -999999999
+>>> type(b)
+<class 'int'>
+>>> 
+
+
+Note:- Every Datatype have some  methods or functions.
+
+
+Base Conversion:- We will covert integer to base,
+
+1.Decimal
+2.Binary
+3.Octal
+4.Hexa Decimal
+
+
+1.Decimal:- We have not required convert to Decimal, Because python float data type.
+
+2.Binary:- (Base-2):- bin()
+------------------
+
+The alloweed digits are :- 0 and 1
+Literal Value should be prefixed with 0b
+
+>>> a = 10
+>>> bin(a)
+'0b1010'
+
+
+2.Octal :-(Base-8):- oct()
+--------------------
+
+The alloweed digits are :- 0 to 7
+Literal Value should be prefixed with 0o
+
+>>> a = 100
+>>> oct(a)
+'0o144'
+
+3.Hexa Decimal:-(Base-16):- hex()
+-----------------------------
+The alloweed digits are :- 0 to 9 and a to f
+Literal Value should be prefixed with 0x
+
+>>> a = 100
+>>> hex(a)
+'0x64'
+
+float data type:-
+---------------
+
+we can use float data type to represent floating point values(decimal values).
+
+>>> a = -2.8
+>>> type(a)
+<class 'float'>
+>>> b = 90.87
+>>> type(b)
+<class 'float'>
+>>> c = 8.0
+>>> type(c)
+<class 'float'>
+
+We will do all mathmetical opeartion use float.
+
+float number is not allowed for "Base Conversion.", If we will try we will get below error.
+
+a = 8.9
+>>> bin(a)
+Traceback (most recent call last):
+  File "<pyshell#10>", line 1, in <module>
+    bin(a)
+TypeError: 'float' object cannot be interpreted as an integer
+
+
+
+Complex Number:-
+---------------
+A Number still is not resolve, it's known as Complex Number.
+
+syntax:-
+
+a+bj :-   a is real part and bj is imaginary part
+
+'j' is pointing complex part.
+
+>>> a = 7+8j
+>>> type(a)
+<class 'complex'>
+>>> 
+>>> b = 9-7.8j
+>>> type(b)
+<class 'complex'>
+>>> 
+>>> c = -9.7-7.6j
+>>> type(c)
+<class 'complex'>
+
+
+Note:- We can do addition, substraction, Multiplication and Division for complex, but real part with real part and img is always with imag,
+
+>>> a = 8+9j
+>>> b = 7+6j
+>>> a+b
+(15+15j)
+>>> 
+>>> a-b
+(1+3j)
+>>> 
+>>> a*b
+(2+111j)
+>>> 
+>>> a/b
+(1.2941176470588236+0.17647058823529416j)
+
+
+Note:- Complex data type has some inbuilt attributes to retrivr the real part and imaginary part.
+
+>>> a = 6+9j
+>>> a.real
+6.0
+>>> a.imag
+9.0
+>>> 
+
+
+Boolean:-
+--------
+
+We can use this data type to represent boolean values.
+
+The only allowed values for this data type.
+
+True and False.
+
+
+>>> 
+>>> fruites = ['Mango','Ornage','Apple']
+>>> 'Mango' in fruites
+True
+>>> 'Bananan' in fruites
+False
+
+Note:- If in a container nothing is their and it's empty it's showing False
+		If in a container something  is exits  it's showing True
+
+
+Internally in python everytime represnt True as 1 and False as 0.
+
+>>> True+True
+2
+>>> True+False
+1
+>>> False+False
+0
+>>> 
+

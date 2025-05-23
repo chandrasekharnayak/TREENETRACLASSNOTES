@@ -1,0 +1,135 @@
+What is Git?
+
+Git is an open-source distributed version control system (DVCS) used to track changes in source code during software development. It allows multiple developers to work collaboratively, manage versions of code, and maintain a history of all changes.
+
+Key features of Git:
+
+Distributed System: Every developer has a complete copy of the repository, including its history.
+Branching and Merging: Enables developers to create independent branches and merge changes without affecting the main codebase.
+Performance: Optimized for speed and efficiency.
+Data Integrity: Ensures the integrity of the codebase using cryptographic hash functions (SHA-1).
+
+
+
+
+What is Version Controlling?
+
+Version controlling is the process of managing changes to files (code, documents, etc.) over time. It allows teams to:
+
+Track changes made to files.
+Collaborate by merging individual changes.
+Rollback to previous versions if issues occur.
+
+
+
+
+Maintain a record of history for accountability and review.
+
+A Version Control System (VCS) is a tool that implements version controlling. Examples include Git, SVN, and Mercurial.
+
+
+
+What is Code Management?
+
+Code management refers to organizing, controlling, and tracking changes to source code in a software project. This often involves:
+
+Using a VCS for versioning.
+Implementing branching strategies (e.g., GitFlow, Trunk-based development).
+Managing repositories and access control for developers.
+Integrating with Continuous Integration/Continuous Deployment (CI/CD) pipelines.
+Code management ensures:
+
+Consistent code quality.
+Reduced conflicts in team environments.
+Clear traceability of changes.
+
+
+Version Control Systems (VCS):
+
+A VCS is a tool or software that helps developers manage changes to their codebase over time. VCSs are categorized into three main types:
+
+Local Version Control Systems (LVCS):
+Description: A simple system where versions are stored on a local computer.
+Example: Backups stored in directories.
+Limitations:
+No collaboration (single-user system).
+Risk of data loss due to hardware failure.
+Use Case: Suitable for individual developers working on personal projects.
+Centralized Version Control Systems (CVCS):
+Description: A single server hosts the repository, and all developers access it.
+Examples: SVN (Subversion), Perforce, CVS.
+Advantages:
+Simplified setup and administration.
+Easy collaboration through a shared repository.
+Disadvantages:
+Dependency on the central server (downtime disrupts work).
+Risk of losing history if the central server crashes without proper backups.
+Distributed Version Control Systems (DVCS):
+Description: Every developer has a full copy of the repository (including the history).
+Examples: Git, Mercurial, Bazaar.
+Advantages:
+Faster operations (local operations like commits, diffs, and history lookup are instantaneous).
+Robust against server crashes (repositories can be pushed/pulled from other copies).
+Better branching and merging capabilities.
+Disadvantages:
+Requires more disk space to store full repository copies.
+
+
+Comparison of VCS Types:
+
+Feature	LVCS	CVCS	DVCS
+
+Repository location	Local	Central Server	Local and Central
+
+Collaboration	No	Yes	Yes
+
+Server dependency	N/A	High	Low
+
+Backup/redundancy	Limited	Centralized backup	Distributed backup
+
+Example tools	None (manual)	SVN, CVS	Git, Mercurial
+
+Conclusion
+
+Git, as a DVCS, is a powerful and widely used tool in modern software development. Understanding the distinctions between VCS types (LVCS, CVCS, DVCS) helps developers choose the right system for their project needs.
+
+GITHUB--- small
+GITLAB---- big application, CICD(jenkins)
+Bitbucket
+
+set global configuration
+git config --global user.name 'chandrasekharnayak'
+git config --global user.email 'k.csnayak108@gmail'
+
+git init :- intialization of .git folder in local system
+git add :- unstage to stage
+    git add file_name :- specific file to stage area
+    git add . :- all file to stage area
+
+git rm --cached file_name :- stage to unstage
+
+#commit
+git commit -m 'commit_name'
+
+#add repository
+git remote add origin https://github.com/chandrasekharnayak/batch17_18.git
+
+#brach change
+git branch -M main
+
+#push
+git push -u origin main
+
+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
+
+git remote set-url origin https://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@github.com/chandrasekharnayak/batch17_18.git
+
+
+local
+
+git init --- local
+git add .
+git commit -m 'commit_name'
+git add remote origin 'https/ssh'
+git branch -M main
+git push -u origin main

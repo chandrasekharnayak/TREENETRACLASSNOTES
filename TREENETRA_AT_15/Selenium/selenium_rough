@@ -1,0 +1,192 @@
+Selenium -- tool -- Automation --UI/GUI -- frontend --(logical/functional)
+web application --- web engine/search engine -- (chrome,firefix,safari,io,edge)
+
+WebDriver:-Writing adv test scripts(suuport all lang. and in lang. type)
+IDE:-Record and Playback
+GRID:-Allow parallel test execution on multiple browser and env(Cross platfrom and Cross Browser)
+RC(Remote Control):--- tool -- write selenium test case in various programming language
+
+test case1 - 2sec
+
+test case2
+
+test case3
+
+
+nth test case--100 200 sec
+
+120 sec
+
+WebDriver is a interface?
+
+class vs interface
+
+specifies a set of methods for imp.
+
+selenium code--- webdriver-- code not possiable with webdriver
+
+location mapper:-
+UI -- we check each fields,buttons,dropdown,frame,window,pops,alreat,browsers are functionally working fine or not
+
+locat(8)
+id-- ui attribute  --- unique attribute ---- id
+name-- ui attribute ---may be unique , may be same
+classname-- ui attribute-- dynamic
+
+tagname
+linktest
+partial link text
+css selector
+xpath----------------ABSOLUTE AND RELATIVE
+
+absolute xpath :- static xpath
+
+TREENETRABATCH/BatchCodeData/TREENETRA_AT_15/Selenium/interface.py
+
+
+identation ---python
+html -- tag
+
+if condition:
+    statement
+
+
+<html>
+<head>
+    <titile> </title>
+    <css
+    js
+    boot
+</head>
+
+<body>
+page
+</body>
+
+</html>
+
+
+
+html :- static
+
+-integrate
+css :- cascading style sheet --- style-- design
+bootstrap :- layout
+js - java scripts - dynamic
+
+
+Registation Page
+name
+
+age
+
+class:- drop
+
+password
+
+confirm pass
+
+radio -- option(math,sci,phy,chem)
+
+submit
+
+<input type="radio" class="form-check-input mt-0">
+
+//tagname[@attribute='values']
+
+//input[@type='radio']
+
+--------------------------------------------------
+Absolute xpath -- starts from the root nodes and traverse the eniter path
+Relative xpath
+
+xpath axes
+//-- descendant :- selects all descendants of the current node
+
+/ :- child (select direct childs nodes
+
+//1600
+    //1700
+        //1800
+            //1900
+                //2000
+
+//1600/1700/1800/1900/2000
+
+//1800/1900/2000
+
+//2000
+
+//1600//2000
+
+//2000
+
+
+Relative xpath:-
+//:- parent -- //:- tagname
+
+using attribute
+----------------
+//tagname[@attribute='value']
+
+connected attribute:-
+------------------------
+and operator in xpath :- if we want check two or more attribute on single xpath, then we can use and operator.
+T  T   T
+//input[@name='name' and @type='email']
+
+Partial Attribute matching:- conatains()
+------------------------------
+
+//tagname[conatains(@attribute, 'value')
+
+//div[contains(@class,'mb-3')]
+
+
+/.. (current parent node) :- which tag currently you are, fetch the same parent.
+//input[@name='name']/parent::div   :- /parent::tagname:- found the current parent aswell
+//input[@name='name’]/..
+
+indexing :- select a specific node when there are multiple matches
+
+(//div[@class='mb-3 row'])[2]
+
+
+//
+/
+/..
+/parent::tagname - parent
+@ - attribute
+contains :- partial attribute
+
+Logical operator :-
+-----------------
+and , | (or)
+
+and :- pass the two attribute , if both the attributes are represent in same tag then it's working properly.
+//input[@type='text' and @name='mobile']
+
+or :- pass the two attribute , if one of them present then its working.
+//input[@name='mobile'] | //input[@type='text']
+
+text():- Exact Match
+-----------------------
+//h1[text()='Student Registration Form']
+
+Sibllings:-
+------
+two types :- following sibling and preceding sibling
+
+following -sibling :- based on the upper tag, we will found the lower tag, its called fowlling siblling.
+locaters/following-sibling::tagname
+//p[@id='second-para']/following-sibling::p
+//locater/preceding-sibling::tagname
+
+ancestor
+---------
+locaters/ancestor::tagname
+//p[@id='paragraph']/ancestor::div
+
+*:- all
+//p[@id='paragraph']/ancestor::*
+

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order Management</title>
+</head>
+<body>
+  <h2>Order Management</h2>
+  <ul>
+    {% for order in orders %}
+      <li>
+        Order ID: {{ order.id }} - Status: {{ order.order_status }} -
+        <a href="{% url 'crm:billing_invoice' order.id %}">Pay & Invoice</a>
+      </li>
+    {% empty %}
+      <li>No orders found.</li>
+    {% endfor %}
+  </ul>
+  <a href="{% url 'crm:dashboard' %}">Back to Dashboard</a>
+</body>
+</html>

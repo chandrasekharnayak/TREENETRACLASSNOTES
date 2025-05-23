@@ -1,0 +1,13 @@
+table{
+width:50%;
+border-collapse:collapse;
+}
+th,td{
+padding:10px;
+text-align:left;
+border:1px solid #ccc;
+}
+th{
+background-color:green;
+}
+

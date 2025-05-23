@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Select Plan</title>
+</head>
+<body>
+  <h2>Select a Plan</h2>
+  <form method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit">Submit</button>
+  </form>
+  <a href="{% url 'crm:dashboard' %}">Back to Dashboard</a>
+</body>
+</html>

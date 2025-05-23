@@ -1,0 +1,90 @@
+sed?
+
+sed stands for stream editor, it reads a text stream (from file or input) , process it, and outputs the modified text
+
+
+> it doesnot change the original file unless told explicitly(-i)
+> workd line by line
+
+syntax
+
+sed [options] 'command' filename
+
+file  -- 10 lines
+
+2-- delete
+3- insert
+8 -- update/modify
+
+coomand basic sed functionality
+
+1.Substitue(Replace)
+
+sed 's/testing/quality/' f1.txt
+
+2.if you want to save chnage in file level
+
+sed -i 's/testing/quality/' f1.txt
+
+3.Delete line(s)
+    delete the specific line
+    sed '2d' filename
+
+    delete a range lines (3 to 5)
+    sed '3,5d' qwerty.txt
+
+    delete lines that match the pattern
+    sed '/assurance/d' qwerty.txt
+
+4. Print specific line(-n)
+
+    print only line 3
+
+    sed -n '3p' qwerty.txt
+
+    range of line
+    sed -n '1,3p' qwerty.txt
+
+    sed -n '1,3p' qwerty.txt
+
+
+ 5.Insert a line
+ -----------------
+ before the line and after the line.
+
+ insert a line before line 2
+
+sed -i '' '2i\this is the new line' qwerty.txt
+-----------------------------------------------------------------
+
+Intro
+keywords
+idenifiers
+datatype
+data strcture
+operator
+input and output statement
+flow control --- if - elif - else
+
+
+Unix
+----
+file and folder commnads
+processor
+head , tail
+find
+grep
+cd
+mkdir
+ls
+vi
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Wireless Mouse",
+    "category": "Electronics",
+    "price": 25.99,
+    "stock": 150,
+    "description": "A smooth and responsive wireless mouse with ergonomic design."
+  },
+  {
+    "id": 2,
+    "name": "Bluetooth Speaker",
+    "category": "Electronics",
+    "price": 49.99,
+    "stock": 80,
+    "description": "Portable Bluetooth speaker with great sound quality."
+  },
+  {
+    "id": 3,
+    "name": "LED Desk Lamp",
+    "category": "Furniture",
+    "price": 35.00,
+    "stock": 200,
+    "description": "Adjustable LED desk lamp with multiple brightness settings."
+  },
+  {
+    "id": 4,
+    "name": "Gaming Keyboard",
+    "category": "Electronics",
+    "price": 79.99,
+    "stock": 120,
+    "description": "RGB backlit mechanical keyboard designed for gamers."
+  },
+  {
+    "id": 5,
+    "name": "Stainless",
+    "category": "Accessories",
+    "price": 14.99,
+    "stock": 300,
+    "description": "Eco-friendly stainless steel water bottle to keep drinks cold or hot."
+  },
+  {
+    "id": 6,
+    "name": "Yoga Mat",
+    "category": "Fitness",
+    "price": 22.50,
+    "stock": 250,
+    "description": "Non-slip yoga mat ideal for both beginners and advanced users."
+  },
+  {
+    "id": 7,
+    "name": "Bluetooth ",
+    "category": "Electronics",
+    "price": 59.99,
+    "stock": 90,
+    "description": "Over-ear Bluetooth headphones with noise-cancellation."
+  },
+  {
+    "id": 8,
+    "name": "Smartwatch",
+    "category": "Electronics",
+    "price": 129.99,
+    "stock": 60,
+    "description": "Smartwatch with fitness tracking, heart rate monitor, and notifications."
+  },
+  {
+    "id": 9,
+    "name": "Travel Backpack",
+    "category": "Accessories",
+    "price": 45.99,
+    "stock": 110,
+    "description": "Durable travel backpack with multiple compartments."
+  },
+  {
+    "id": 10,
+    "name": "Electric Toothbrush",
+    "category": "Health & Beauty",
+    "price": 29.99,
+    "stock": 180,
+    "description": "Rechargeable electric toothbrush with multiple cleaning modes."
+  }
+]

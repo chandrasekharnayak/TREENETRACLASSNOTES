@@ -1,0 +1,46 @@
+6. Test Scenarios Covered
+Test Case	Scenario	Expected Outcome
+GET Employees (Success)	Fetch employee data	Status 200, valid JSON response
+POST Employee (Valid)	Add a new employee with correct data	Status 201, employee added
+POST Employee (Invalid)	Add an employee with missing fields	Status 400, error message
+PUT Employee (Valid)	Update an existing employee's details	Status 200, updated data
+PUT Employee (Invalid ID)	Try updating a non-existing employee	Status 404, error message
+PUT Employee (Invalid Data)	Update employee with incorrect field types	Status 200, incorrect data update
+
+
+dev --- FRS--- tools--lang-- application on dev env --- devops
+application
+
+Test env --- devops + tester
+
+phone pee --- java full -- micro
+payu
+
+teams
+outlook
+    mail group -- dev
+    server ---
+    DB
+    Linux
+    Cloud
+
+VPN
+
+POC
+----
+IDLE
+GIT--- main --- custome_repo -- pull,clone
+jira
+env--- confluence page --- jira
+unix--- linux server -- application
+Database access--- read
+
+
+Bug life cycel--
+new
+assign
+open
+fix
+retest--- verify---close
+|
+reopen

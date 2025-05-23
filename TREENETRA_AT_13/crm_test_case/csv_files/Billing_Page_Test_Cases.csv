@@ -1,0 +1,19 @@
+Test Case ID,Test Case Title / Name,Module / Feature,Test Case Description,Pre-Conditions,Test Steps,Test Data,Expected Result,Actual Result,Status (Pass/Fail),Priority,Severity,Test Environment,Test Type,Assigned To,Test Execution Date,Defect ID (if applicable),Comments / Notes,Automation Status,Requirements ID / Traceability
+TC01,Verify Billing History Display,Billing Page,Verify that the billing history displays past and current bills with accurate due dates and amounts.,User is logged in and on the Billing page.,"1. Open the Billing page.
+2. Review the billing history for past and current bills.",,Billing history displays accurate information for each bill with correct due dates and amounts.,,,High,Critical,Web Browser,Functional,,,,,,
+TC02,Verify Payment Method Management,Billing Page,Verify that users can add or edit payment methods such as credit cards or bank accounts.,User is logged in and on the Billing page.,"1. Open the Billing page.
+2. Click on the Payment Method section.
+3. Add or edit a payment method.",,User is able to successfully add or edit payment methods.,,,High,Critical,Web Browser,Functional,,,,,,
+TC03,Verify Pay Now Button Functionality,Billing Page,Verify that the Pay Now button allows the user to make an immediate payment.,User is logged in and on the Billing page.,"1. Open the Billing page.
+2. Click on the Pay Now button next to a bill and follow the steps to make a payment.",,"Pay Now button allows the user to make a payment, and a confirmation is displayed.",,,High,Critical,Web Browser,Functional,,,,,,
+TC04,Verify Download Bill Functionality,Billing Page,Verify that the Download Bill button allows the user to download the bill in PDF format.,User is logged in and on the Billing page.,"1. Open the Billing page.
+2. Click on the Download Bill button for any bill and save the file.",,Download Bill button successfully downloads the bill in PDF format.,,,High,Critical,Web Browser,Functional,,,,,,
+TC05,Verify Payment Method Update,Billing Page,Verify that payment methods can be successfully updated or changed.,User is logged in and on the Billing page.,"1. Open the Billing page.
+2. Navigate to the Payment Method section.
+3. Update an existing payment method.",,Payment method is successfully updated and saved.,,,High,Critical,Web Browser,Functional,,,,,,
+TC06,Verify Bill Due Date Display,Billing Page,Verify that the bill due date is displayed correctly next to each bill.,User is logged in and on the Billing page.,"1. Open the Billing page.
+2. Verify the due dates displayed next to each bill.",,Bill due dates are displayed accurately next to each bill.,,,High,Critical,Web Browser,Functional,,,,,,
+TC07,Verify Graph/Chart of Spending Trends,Billing Page,Verify that the spending trends graph/chart displays accurate data over time.,User is logged in and on the Billing page.,"1. Open the Billing page.
+2. Check the graph/chart section for spending trends over time.",,Spending trends graph/chart shows correct and updated data over time.,,,High,Critical,Web Browser,Functional,,,,,,
+TC08,Verify Navigation Links for Billing,Billing Page,"Verify that all navigation links (Billing History, Payment Options, Bill Settings) are functional and redirect to the correct sections.",User is logged in and on the Billing page.,"1. Open the Billing page.
+2. Click on each navigation link (Billing History, Payment Options, Bill Settings) and verify redirection.",,All navigation links work as expected and redirect to the correct sections.,,,High,Critical,Web Browser,Functional,,,,,,

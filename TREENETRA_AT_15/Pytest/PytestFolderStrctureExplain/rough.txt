@@ -1,0 +1,74 @@
+what is test framework?
+framework means guideline and rules and used to  structure , exceute the testing a effective way.
+It provides a systematic approch to testing, enable testers to create ,excute and manage tests consistently.
+
+moto:-
+create test
+manage test
+execute test
+
+pytest
+robot
+
+testing --- smoke, sanity, regression, test report, pre condition, post condition, test data--- strc
+
+types framework?
+
+1.DDT :- Data -Driven Testing Framework.
+2.KDT :- Keyword-Driven Testing Framwork.
+3.Hybrid Testing Framework
+4.BDD :- Behaviour-Driven Development Framework
+-----------------------------
+5.Library Arch Testing Framework
+6.Linear Scripting Framework
+7.Modular Testing Framework
+
+1.DDT :- Data -Driven Testing Framework.(Pytest)
+>This framework seprates test scrpits(file) from test data. Test data is stored in external(Excel,csv,json,databases) and scripts read the dara dynamically.
+>For the exceuting test, we will write our own logic.
+
+
+2.KDT :- Keyword-Driven Testing Framwork.(Robot)
+
+This framework uses predfine keywords representing actions to exceute test cases. Keyowrd are mapped to functions, and tests are excuted based on these keywords.
+
+3.Hybrid Testing Framework
+:- it is the combinatio of both DDT ,KDT, BDD framework, This combines two or more frameworks to leverage their advtanges.
+
+4.BDD :- Behaviour-Driven Development Framework
+This focuses on collabaretion between developers , testers and non- tech stakeholders. it uses natural language to describe test scenarios
+
+Gherkin lang-synatx(Given,When, Then)
+
+what is pytest?
+-------------
+pytest is testing framework, and it have very to very simple and have powerful features.
+It used to write test cases for both unit and functional testing. pytest supports fixtures, parameterized tests, plugins and detailed assertion.
+
+Unit testing
+Api Testing
+Web Testing
+Database Testing
+
+
+Folder strcture
+how to write test file and test case in pytest
+how ton excute test file and test case in pytest
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

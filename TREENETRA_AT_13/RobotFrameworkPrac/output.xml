@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0.3 (Python 3.12.3 on win32)" generated="20240810 10:14:45.724" rpa="false" schemaversion="2">
+<suite id="s1" name="testWindowsHandel" source="C:\Users\TREENETRA\PycharmProjects\TREENETRAProject\TREENETRA_AT_13\RobotFrameworkPrac\testWindowsHandel.robot">
+<test id="s1-t1" name="Handel Multiple Browser Windows">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240810 10:14:46.157" level="INFO">Opening browser 'Chrome' to base url 'https://demoqa.com/browser-windows'.</msg>
+<status status="PASS" starttime="20240810 10:14:46.155" endtime="20240810 10:15:21.787"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240810 10:15:21.787" endtime="20240810 10:15:21.913"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id:tabButton</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240810 10:15:21.916" level="INFO">Clicking button 'id:tabButton'.</msg>
+<status status="PASS" starttime="20240810 10:15:21.914" endtime="20240810 10:15:22.474"/>
+</kw>
+<kw name="Get Window Handles" library="SeleniumLibrary">
+<var>${all_window}</var>
+<doc>Returns all child window handles of the selected browser as a list.</doc>
+<msg timestamp="20240810 10:15:22.513" level="INFO">${all_window} = ['C75B8C9009A504C3BACDD11A28F23506', 'EEDB821A296098ACA660F562E438136A']</msg>
+<status status="PASS" starttime="20240810 10:15:22.475" endtime="20240810 10:15:22.513"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>${all_window[1]}</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20240810 10:15:22.514" endtime="20240810 10:15:22.787"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${new_window_text}</var>
+<arg>xpath://h1</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20240810 10:15:22.895" level="INFO">${new_window_text} = This is a sample page</msg>
+<status status="PASS" starttime="20240810 10:15:22.790" endtime="20240810 10:15:22.895"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Test From new window: ${new_window_text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20240810 10:15:22.897" level="INFO">Test From new window: This is a sample page</msg>
+<status status="PASS" starttime="20240810 10:15:22.896" endtime="20240810 10:15:22.897"/>
+</kw>
+<status status="PASS" starttime="20240810 10:14:46.155" endtime="20240810 10:15:22.898"/>
+</test>
+<status status="PASS" starttime="20240810 10:14:45.728" endtime="20240810 10:15:22.901"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="testWindowsHandel">testWindowsHandel</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

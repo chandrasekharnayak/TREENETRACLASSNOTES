@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.12.3 on win32)" generated="20240809 09:59:57.146" rpa="false" schemaversion="4">
+<suite id="s1" name="TREENETRAProject" source="C:\Users\TREENETRA\PycharmProjects\TREENETRAProject">
+<suite id="s1-s1" name="TREENETRA AT 13" source="C:\Users\TREENETRA\PycharmProjects\TREENETRAProject\TREENETRA_AT_13">
+<suite id="s1-s1-s1" name="RobotFrameworkPrac" source="C:\Users\TREENETRA\PycharmProjects\TREENETRAProject\TREENETRA_AT_13\RobotFrameworkPrac">
+<suite id="s1-s1-s1-s1" name="PythonRobot" source="C:\Users\TREENETRA\PycharmProjects\TREENETRAProject\TREENETRA_AT_13\RobotFrameworkPrac\PythonRobot">
+<suite id="s1-s1-s1-s1-s1" name="AdditionTest" source="C:\Users\TREENETRA\PycharmProjects\TREENETRAProject\TREENETRA_AT_13\RobotFrameworkPrac\PythonRobot\AdditionTest.robot">
+<test id="s1-s1-s1-s1-s1-t1" name="Validate Addition Of Two Numbers" line="10">
+<kw name="Add Two Num" library="MathLibrary">
+<var>${result}</var>
+<arg>${number1}</arg>
+<arg>${number2}</arg>
+<msg timestamp="20240809 09:59:57.203" level="INFO">${result} = 1020</msg>
+<status status="PASS" starttime="20240809 09:59:57.200" endtime="20240809 09:59:57.203"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${result}</arg>
+<arg>${expected_result}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<msg timestamp="20240809 09:59:57.204" level="FAIL">1020 != 30</msg>
+<status status="FAIL" starttime="20240809 09:59:57.203" endtime="20240809 09:59:57.204"/>
+</kw>
+<status status="FAIL" starttime="20240809 09:59:57.199" endtime="20240809 09:59:57.208">1020 != 30</status>
+</test>
+<status status="FAIL" starttime="20240809 09:59:57.190" endtime="20240809 09:59:57.217"/>
+</suite>
+<status status="FAIL" starttime="20240809 09:59:57.188" endtime="20240809 09:59:57.223"/>
+</suite>
+<status status="FAIL" starttime="20240809 09:59:57.186" endtime="20240809 09:59:57.226"/>
+</suite>
+<status status="FAIL" starttime="20240809 09:59:57.184" endtime="20240809 09:59:57.229"/>
+</suite>
+<status status="FAIL" starttime="20240809 09:59:57.148" endtime="20240809 09:59:57.231"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TREENETRAProject">TREENETRAProject</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="TREENETRA AT 13">TREENETRAProject.TREENETRA AT 13</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="RobotFrameworkPrac">TREENETRAProject.TREENETRA AT 13.RobotFrameworkPrac</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1-s1" name="PythonRobot">TREENETRAProject.TREENETRA AT 13.RobotFrameworkPrac.PythonRobot</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1-s1-s1" name="AdditionTest">TREENETRAProject.TREENETRA AT 13.RobotFrameworkPrac.PythonRobot.AdditionTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

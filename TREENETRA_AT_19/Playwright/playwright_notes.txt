@@ -1,0 +1,43 @@
+UI testing
+modern end-end testing  framework --- microsoft
+automate the browser (chrome,safari,firefox)
+
+
+Feature
+-------
+
+Cross-Browser Support  ------- support multiple browsers
+
+Multiple Lang --------------------- javascrpts/typescrpiuts , Python, java, c#
+
+Auto-waiting ----------------------Automatically waits for elements to be ready
+
+Headless and UI mode :-----------------Can run tests with or without a visibale browser
+
+Network mocking ---------------------- intercept and mock netwek request and response.
+
+Parallel test execution ---------------------run test in parallel for faster result ( I/O bound and CPU bound)--thread and processor
+
+code generation ------------ Bult-in test recorder generates test scripts by recording your action.
+
+Multiple browser context -------- simulate nultiple user or sessions in the same tests.
+
+Mobile & Device emulation ------------- Emulates mobile browser easily (IOS and andriod)
+
+
+
+Selenium
+
+
+Playwright
+
+
+codegen
+
+
+
+
+
+
+
+

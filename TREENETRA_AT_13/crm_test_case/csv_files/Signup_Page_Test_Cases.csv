@@ -1,0 +1,27 @@
+Test Case ID,Test Case Title / Name,Module / Feature,Test Case Description,Pre-Conditions,Test Steps,Test Data,Expected Result,Actual Result,Status (Pass/Fail),Priority,Severity,Test Environment,Test Type,Assigned To,Test Execution Date,Defect ID (if applicable),Comments / Notes,Automation Status,Requirements ID / Traceability
+TC01,Verify Username Field,Signup Page,Verify the username field accepts valid input.,User is on the signup page.,"1. Open the Signup page.
+2. Enter a valid username and move to the next field.",,Username is accepted and moves to the next field.,,,High,Critical,Web Browser,Functional,,,,,,
+TC02,Verify Email Field for Empty Input,Signup Page,Verify the email field does not accept empty input.,User is on the signup page.,"1. Open the Signup page.
+2. Leave the email field empty and attempt to submit.",,Error message for empty email field is displayed.,,,High,Critical,Web Browser,Functional,,,,,,
+TC03,Verify Email Format Validation,Signup Page,Verify the email field accepts valid email format only.,User is on the signup page.,"1. Open the Signup page.
+2. Enter an invalid email format and attempt to submit.",,Error message for invalid email format is displayed.,,,High,Critical,Web Browser,Functional,,,,,,
+TC04,Verify Email Uniqueness Validation,Signup Page,Verify the system checks for unique emails.,User is on the signup page.,"1. Open the Signup page.
+2. Enter an email that already exists in the system.",,Error message for duplicate email is displayed.,,,High,Critical,Web Browser,Functional,,,,,,
+TC05,Verify Auto User ID Generation,Signup Page,Verify that the system generates a unique user ID automatically.,User is on the signup page.,"1. Open the Signup page.
+2. Fill all fields and submit the form.",,A unique auto-generated User ID is created.,,,High,Critical,Web Browser,Functional,,,,,,
+TC06,Verify Age Field Only Accepts Numeric Input,Signup Page,Verify the age field only accepts numeric input.,User is on the signup page.,"1. Open the Signup page.
+2. Enter non-numeric characters in the Age field and attempt to submit.",,Error message for non-numeric characters in the Age field is displayed.,,,High,Critical,Web Browser,Functional,,,,,,
+TC07,Verify Age Field for Empty Input,Signup Page,Verify the age field does not accept empty input.,User is on the signup page.,"1. Open the Signup page.
+2. Leave the Age field empty and attempt to submit.",,Error message for empty Age field is displayed.,,,High,Critical,Web Browser,Functional,,,,,,
+TC08,Verify Age Range Validation,Signup Page,"Verify that age input is within the valid range (e.g., 18-99).",User is on the signup page.,"1. Open the Signup page.
+2. Enter an age below 18 or above 99 and submit.",,Error message for invalid age is displayed.,,,High,Critical,Web Browser,Functional,,,,,,
+TC09,Verify Password and Confirm Password Fields,Signup Page,Verify password and confirm password fields accept valid input.,User is on the signup page.,"1. Open the Signup page.
+2. Enter a valid password and confirm password.",,Password and Confirm Password fields accept valid input.,,,High,Critical,Web Browser,Functional,,,,,,
+TC10,Verify Password and Confirm Password Match,Signup Page,Verify that the password and confirm password fields match.,User is on the signup page.,"1. Open the Signup page.
+2. Enter different passwords in Password and Confirm Password fields.",,Error message for mismatched passwords is displayed.,,,High,Critical,Web Browser,Functional,,,,,,
+TC11,Verify Password Strength Validation,Signup Page,"Verify that the password meets minimum strength criteria (e.g., 8 characters).",User is on the signup page.,"1. Open the Signup page.
+2. Enter a weak password (less than 8 characters) and submit.",,Error message for weak password is displayed.,,,High,Critical,Web Browser,Functional,,,,,,
+TC12,Verify Form Submission with Valid Data,Signup Page,Verify successful form submission with valid data.,User is on the signup page.,"1. Open the Signup page.
+2. Fill all fields with valid data and submit the form.",,Form is submitted successfully.,,,High,Critical,Web Browser,Functional,,,,,,
+TC13,Verify Form Submission with Empty Fields,Signup Page,Verify form submission displays errors when required fields are empty.,User is on the signup page.,"1. Open the Signup page.
+2. Leave required fields empty and submit the form.",,Error messages for empty required fields are displayed.,,,High,Critical,Web Browser,Functional,,,,,,

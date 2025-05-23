@@ -1,0 +1,66 @@
+#why python
+1.Python is high level programming language.
+    >low level
+    >middum level
+    >high level --- oops & pops
+
+oops :- object orieneted programming--- rules and regulation and syntaxes are very to very strict
+pops:- procedure orieneted programming:- syntaxes are easy, and easy to achive the code.
+
+2.python is developed by Guido Van Russom, developed the python in 1989, 1991 feb 20 officially lunch.
+
+3.perl and C# provide some basic idea to develope python.
+
+4.Python is scripting language.
+
+
+where we can use ?
+-------------------
+1.Web Application Development.
+2.Web Application Testing and mobile app testing
+3.Desktop application development.
+4.Data Analysis and Data Engineering.
+5.Data Science application
+6.Machine Learning & Deep learing
+7.LLM(Large Languae Model) and NLP(Natural language Protocol)
+8.AI
+9.IOT device testing and networking testing
+
+
+Limitation of python
+---------------------
+1.Banking application payment gateway system.
+2.Mobile application development
+
+Feature of Python
+------------------
+
+1. Open Source and Freeware.
+2. Simple and easy to learn.
+3.  High level programming lang.
+4. Portability and platfrom independent
+5. Dynamically typed.
+6. Extensive lib :- 65k+
+7. both oops and pops.
+8. python is a interpeter lanaguage.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

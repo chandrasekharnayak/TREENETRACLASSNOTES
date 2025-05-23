@@ -1,0 +1,252 @@
+Folder and Files
+----------------
+
+File and Directories Creation
+-------------------------------
+mkdir :- create a new directory (folder)
+touch :- create a empty file
+cat  :- read the contained of a file.
+
+Enter contenet in a File
+-------------------------
+vi file_name :- vi editor
+        press i :- insert the context
+        write , replace , modify the contenet
+        press esc (stop the insert)
+        save :- :wq!
+        not save :- :q!
+
+
+File Copy and Move
+-------------------
+cp :- copy one file content in another file
+
+    cp source to destination
+    cp file1.txt file2.txt
+
+scp :- loacl system to server copy
+
+
+mv :- rename or move the file
+
+       mv old_file_name new_file_name
+
+cd FolderName:- change directory
+
+cd ..   :- back to the directory
+
+mv :- move
+    mv file.txt path/to/directory(Full path)
+
+
+File and directory Deletion
+---------------
+rm :- delete a specific file
+rm -f :- delete the file forcefully
+
+rmdir :- only delete the empty directopries
+
+rm -rf :- recursive and content based directory delete.
+
+
+File Viewing
+-------------
+cat :- Display the content
+more :- display the contenet but page by page
+less :- display the content scrollablee file viewer
+head :- display the content of first 10 lines (10 is by default)  haed -5 file.txt
+tail :- display the content of last 10 lines (10 is by default)
+
+
+Permission
+---------
+File and Directory (chmod)
+Ownership change or provide(chown)
+
+
+total 20
+-rw-r--r-- 1 treenetra treenetra    0 May 16 08:52  file3.txt
+-rw-r--r-- 1 treenetra treenetra  320 May 16 08:57 '!'
+-rw-r--r-- 1 treenetra treenetra 2738 May 16 09:25  file1.txt
+drwxr-xr-x 2 treenetra treenetra 4096 May 19 08:35  Folder3
+drwxr-xr-x 2 treenetra treenetra 4096 May 19 08:35  Folder2
+drwxr-xr-x 2 treenetra treenetra 4096 May 19 08:35  Folder1
+-rw-r--r-- 1 treenetra treenetra    0 May 19 08:35  file5.txt
+-rw-r--r-- 1 treenetra treenetra    0 May 19 08:35  file4.txt
+-rw-r--r-- 1 treenetra treenetra    0 May 19 08:35  file2.txt
+
+d :- directory
+- :- file
+
+Read = r (4)
+Write = w (2)
+Execute = x (1)
+
+octal (0-7)
+
+
+permission table
+
+
+Number                  Binary                   Permission                         Meaning
+
+0                       0000                       ---                              No Permission
+1                       0001                       --x                              Exceute Only
+2                       0010                       -w-                              write only
+3                       0011                       -wx                              write and exceute
+4                       0100                       r--                              read only
+5                       0101                       r-x                              read and execute
+6                       0110                        rw-                              read and write
+7                       0111                       rwx                              read ,write and exeutre
+
+
+User(u) :- The files owner
+Group (g) :- Users in the files group
+Others(o) :- All other group
+
+chmod 777 file3.txt
+
+user = read write exceute
+grpu = read
+othgers = read
+
+
+Chnage Owner(chown)
+-------------
+
+
+used to chnage the ownership of a file or directory
+
+chown [options] [onwer][:group] file
+
+chown kanha file5.txt  --- user permision (chnage owner to kanha)
+chown :developers file1.txt   :team(group) (chnage only the group)
+
+chown kanha:developer file1.txt ( change onwer to kanha and  group to developers)
+
+chown
+------
+create user
+
+sudo useradd -m "username"
+sudo passwd "username"
+provide the password
+
+
+list of user check
+----------------
+cut -d: -f1 /etc/passwd
+
+Note
+chhange the permisiion help of sudo su
+
+
+#Comprehensive categorized list of search command
+
+find is most powerful search command
+
+synatx
+find [path] [expression]
+
+find .  ---> Find all files and Folders from the current directory
+
+find path -name file_name.ext  ------> Find a file by extract name
+
+find . -iname  "file1.txt"---------> case-insensitive search
+
+find path -type f -----> find only files
+
+find . +size +1M -------------> Find files larger than 1mb  (- smaller than 1mb)
+
+find . -empty -----> find empty files or directories
+
+find . -mtime -1       ----> Files modifoied in the last 1 day
+
+find . -user username ----> Files owned by a user
+
+find . -perm permisiion code(777) ----- find filed with specific permisiion
+
+find . -name "*.txt"-------------> find the extension
+
+find . -name "*.txt" -delete -----> find and delete
+
+
+grep:-
+-----
+used for searching text or patterns
+
+working area --- log analysis(.log), debugging, configuration review(.ini) and automation scripts(.py,.java)
+
+Why we use grep?
+
+To search for specific strings or patterns in files
+To analyze logs (error message, specific entries)
+To Verify file content during testing or validation
+
+
+syntax:-
+
+grep [option] pattern file_name
+
+Note :- grep is case sensitive.
+
+
+1.Find a word in a file
+
+grep "ERROR" application.log
+
+2.Ignore case
+
+grep -i "error" application.log
+
+3. Count Matches
+
+grep -c "ERROR" application.log
+
+4.Show line Numbers
+
+grep -n "ERROR" application.log
+
+5.Inverse Match
+
+grep -v "INFO" application.log
+
+Regular expression:-
+------------------
+^ $ . * [] -e
+
+1.start of line (^)
+
+grep "^2025" application.log
+
+
+2.End of line ($)
+
+grep "FAILED$" application.log
+
+3.Any charcater (.)
+
+grep "c.t" application.log
+
+
+4.Zero or More (*)
+grep "lo*gin" application.log
+
+5.Char set
+
+grep "gr[ea]y" application.log
+
+
+SED
+
+
+
+
+
+
+
+
+
+
+
+

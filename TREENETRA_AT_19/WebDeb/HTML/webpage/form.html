@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration form</title>
+</head>
+<body>
+
+  <h1> Studnets Registration Form</h1>
+
+  <form>
+    <label>FirstName:</label>
+    <input type="text" id="fname" placeholder="First Name" required="[A-Za-Z]+"/>
+
+    <label>SureName:</label>
+    <input type="text" id="sname" placeholder="Sure Name" required="[A-Za-Z]+"/>
+
+    <label> Mobile Number:-</label>
+    <input type="text" id ="mobile" placeholder="mobile number" required="\d{10}"/><br>
+
+
+    <label> Choose subject: </label>
+    <input type="checkbox" name ="subjects" value="Math"> Math
+    <input type="checkbox" name ="subjects" value="Scienece"> Science
+    <input type="checkbox" name ="subjects" value="History"> History
+    <input type="checkbox" name ="subjects" value="Geography"> Geopraphy<br>
+
+
+    <label>Education Level</label>
+    <select required>
+      <option value="">--select--</option>
+      <option value="school">School</option>
+      <option value="college">College</option>
+      <option value="institute">Institute</option>
+
+    </select>
+    <br>
+
+    <button type="submit">submit</button>
+  </form>
+
+</body>
+</html>

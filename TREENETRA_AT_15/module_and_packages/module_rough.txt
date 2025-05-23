@@ -1,0 +1,45 @@
+module is a python file and the extension is .py
+    variable---data
+    function--- logic
+    class --- fucntions
+
+there are 2 types of modules are avl.
+
+inbuilt module
+user creation module
+
+
+
+variable
+fucntion
+class
+module -- name
+
+package is nothing but , its a collection py file in directory   --- folder
+
+
+Folder
+    __init__.py ---- config (1)
+    a1.py  1
+    a2.py  1
+    a3.py  1    ------------------- connected with each python file.
+    a4.py  1
+
+
+user-define package
+inbuilt package
+3rd party (pip)
+
+python installer package
+
+
+
+
+
+
+
+
+
+
+
+

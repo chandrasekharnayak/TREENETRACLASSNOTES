@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/AutomationProjectClass" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/AutomationProjectClass/PytestPrac/SeleniumPrac" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Flask/flask_api" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Flask/flask_repo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Flask/flask_repo/api_webapp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Flask/interviewSlot" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/TREENETRA_AT_13/CorePython" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/TREENETRA_AT_13/CorePython/my_data/batch13_14" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/TREENETRA_AT_13/Flask" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/TREENETRA_AT_14" vcs="Git" />
+  </component>
+</project>

@@ -1,0 +1,133 @@
+FUNCTION--- LOGIC
+CLASS --- COLLECTION FUNCTION
+VARIABLE--- DATA
+MODULE --- PYTHON PAGE
+
+UPPER,LOWER,DIGIT, _
+
+DIGIT SHOULD NOT START FIRTS
+
+camel caseing and snake caseinmg
+
+camel - upper, lower, digit
+
+TreenetraEducation108(Folder,Class)
+treenetra_education_108(var,function,Module)
+
+
+CHAR
+ALPHA-- STRING
+NUMERIC-- INT,FLOT,COMPLEX
+- STRING
+
+INT
+FLOAT
+COMPLEX
+BOOLEAN
+STRING
+NONE
+
+DS
+---
+LIST
+TUPLE
+SET
+FZ
+BYTES
+BYTEARRAY
+RANGE
+DICT
+
+
+REAL + IMAG -- KNOW AS COMPLEX NUMBER
+
+BOOL -- TRUE , FALSE
+
+STRING - '' , "" , ''' '''
+
+VAR = ''
+VAR = ""
+
+'''
+
+
+
+'''
+
+list and tuple
+var =
+
+
+Opeartor - 6
+
+arth(+,-,* /, //, **, %)
+rela or com(>, >=, <, <=, != ,==)
+assignment var = data, var+=data  , x = x+10
+logical( and, or, not)
+bitwise
+special - mem(in), idenity
+
+
+t = [10,20,30]
+
+10 in t
+
+var1 = 10
+var2 = 10
+
+
+flow
+
+conditional(if,elif,else)
+
+iterative(for,while)
+
+
+trnsfer(break,continue,pass)
+
+if comdition:
+    statelement
+
+else:
+    staement
+
+
+if
+
+elif
+
+elif
+
+elif
+.
+/
+.
+.
+
+
+else
+
+
+flow control ----
+
+for
+
+
+7:30am python
+
+8:45 to 9:45am --- unix :- GIT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

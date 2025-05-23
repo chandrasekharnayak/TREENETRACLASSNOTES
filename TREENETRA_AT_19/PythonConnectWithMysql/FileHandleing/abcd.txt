@@ -1,0 +1,28 @@
+vtext file(.txt,.xlsx,.csv.docx)
+binary file (image,audio,video,mp3,png,jpeg,jpg)
+
+#how to open a file in python
+
+open()
+
+open('file_location',mode)
+
+mode
+
+read-r
+write-w
+append-a
+
+hardcoded string data - encrpted
+
+var = open('filr_location','r')
+
+read
+
+read()
+readlines()
+ jkghvghvhjgvcjftjyabcd
+DEF
+
+abcd
+DEF

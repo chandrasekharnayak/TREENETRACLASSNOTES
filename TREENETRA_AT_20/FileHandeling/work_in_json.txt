@@ -1,0 +1,26 @@
+json is a way, where we will store out data, based on key and value pair like dict.
+
+apis --- is a communication way between the end user and server
+
+
+
+user -------------------------> server(application)
+
+
+json --- file --- phytho outsider file.
+
+14 --- list, tuple,dict...
+
+file --- data--- string
+
+
+pickling(serialization) and unpicking(de-serialization)
+
+json --- python -- string---
+serialization
+convert into json string in a python object dict.
+
+de-serialization
+convert into python object to json string.
+
+

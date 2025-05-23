@@ -1,0 +1,101 @@
+1.How to Django use develop a telecom CRM and BSS , Billing system?
+
+
+CRM
+1.User Authentication and Role Management :- Django's built in authentication system helps to manage differenet user roles
+(Customers,Sales Agents,Support Agents,Admins).
+
+2.RESTful API with Djnago DRF(Django Rest Framwork):- Enables integration with extrenal services payment gateway, third-party api, and mobile apps.
+
+3.Data Management with ORM (Objcet relation mapper):- Handeling of customer profiles,transations and interaction history.
+
+4.Session & Token Management :- Secure handeling of customer logins, active session and multi-device support.
+
+5.Email and Notification System :- Can Integrate with Djnago's email and push notification system for sending and alrerts and updates to customers,
+
+6.Admin Dasboard :- Django's built-in admin panel helps manage customers , tickets, transations and serice requets.
+
+BSS
+
+1.Order Management:- Djnago models trancks new services activation, modifications and terminations.
+
+2.Subscription Management :- Handels prepaid and postpaid services using Django models.
+
+3.Services Provisioning API :- Django Rest Framework can Integrate with network elements via APIs.
+
+4.Data Validation and Business Rules :-Djnago Forms and Serilizers ensure business rule enforcement.
+
+
+
+Django Features for billing:-
+
+1.Usage Tracking :- Django can store and process Call Details Records(CDRs) or data usage logs.
+
+2.Invoice Generation :- Djnago templates can generate invoice in PDF or HTML.
+
+3.Payment Gateway Integration :- Djnago(DFR)  integrates with payment providers like RozerPay,Paypal etc
+
+4.Tax and Discount Management :- Djnago models and vusiness logic calculate taxes , discounts and overdure charges.
+
+5.Recurring Billing Automation :- Djnago Celery handels periodic task like auto-billing and notification.
+
+
+
+2.Explain MVT Arch, draw and EXplain the flow.?
+
+3.Django end to end flow start from request to response?
+
+
+
+
+Djnago functional interview questions?
+
+1.What is Djnago's main features
+    > ORM
+    >Security(in built authentication and CSRF)
+    >Admin Interface
+    >built-in template engine
+    >Djnago Rest Framework
+
+
+2.Whats Djnago ORM
+
+3. What is models.py and what is the models?
+
+4.How doesr djnago handels authentication>
+    djnago.contrib.auth
+
+5.What is djnago middleware and types?
+
+6. how templates work djnago?
+
+7.how database connect with Djnago?
+
+
+
+
+4. How Djnago Cam be integrated with other Telecom Systems?
+
+> Integration with network elements(Via Apis):- Djnago-based middleware can connect to telecom switches and provision services.
+> Usage Data procession(CDRs,Logs)- Djnago celery can schdule tasks to fetch and process usage data.
+> Fraud detection & security :- Djnago can impliment rule-based fraud detection in billing transatiions.
+> Multi-Tenta Support :- Django supports multi-tenta databases for handleing multiple telecom operators.
+
+
+Djnago Based CRM,BSS and Billing question
+
+1.How does djnago help in building a telecom CRM system?
+
+2.How do you handel role-based access in a telecom -application?
+
+3.How do you handel bulk customer data in djnago?
+
+4.How would you design a djnago model for telecom service subsription?
+
+5.How does djnago handel order processing for service activation
+
+6.How would you design a billing system using Djnago?
+
+
+
+

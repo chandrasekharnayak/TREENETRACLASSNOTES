@@ -1,0 +1,1126 @@
+Math
+
+
+The math module in Python provides a wide range of mathematical functions, including basic arithmetic, trigonometry, logarithmic operations, and constants. It’s useful for performing advanced mathematical operations and calculations. Below are the important methods from the math module, along with explanations and examples.
+
+1. math.sqrt(x)
+* Description: Returns the square root of x.
+* Use Case: Used when you need to compute the square root of a number.
+* Example: python Copy code   import math
+*
+* result = math.sqrt(16)
+* print("Square root of 16:", result)
+*    Output: mathematica Copy code   Square root of 16: 4.0
+*   
+
+2. math.pow(x, y)
+* Description: Returns x raised to the power y (i.e., x^y).
+* Use Case: Useful when you need to calculate exponentiation.
+* Example: python Copy code   import math
+*
+* result = math.pow(2, 3)
+* print("2 raised to the power 3:", result)
+*    Output: css Copy code   2 raised to the power 3: 8.0
+*   
+
+3. math.ceil(x)
+* Description: Returns the smallest integer greater than or equal to x.
+* Use Case: Useful when you need to round up a floating-point number to the nearest integer.
+* Example: python Copy code   import math
+*
+* result = math.ceil(4.3)
+* print("Ceiling of 4.3:", result)
+*    Output: mathematica Copy code   Ceiling of 4.3: 5
+*   
+
+4. math.floor(x)
+* Description: Returns the largest integer less than or equal to x.
+* Use Case: Useful when you need to round down a floating-point number to the nearest integer.
+* Example: python Copy code   import math
+*
+* result = math.floor(4.7)
+* print("Floor of 4.7:", result)
+*    Output: mathematica Copy code   Floor of 4.7: 4
+*   
+
+5. math.fabs(x)
+* Description: Returns the absolute value of x as a float.
+* Use Case: Useful for ensuring a value is positive, regardless of its original sign.
+* Example: python Copy code   import math
+*
+* result = math.fabs(-7)
+* print("Absolute value of -7:", result)
+*    Output: mathematica Copy code   Absolute value of -7: 7.0
+*   
+
+6. math.factorial(x)
+* Description: Returns the factorial of x, which is x! = x * (x-1) * ... * 1.
+* Use Case: Used in combinatorics and probability calculations.
+* Example: python Copy code   import math
+*
+* result = math.factorial(5)
+* print("Factorial of 5:", result)
+*    Output: mathematica Copy code   Factorial of 5: 120
+*   
+
+7. math.gcd(a, b)
+* Description: Returns the greatest common divisor of a and b.
+* Use Case: Useful for finding the largest integer that divides both a and b without leaving a remainder.
+* Example: python Copy code   import math
+*
+* result = math.gcd(54, 24)
+* print("GCD of 54 and 24:", result)
+*    Output: mathematica Copy code   GCD of 54 and 24: 6
+*   
+
+8. math.log(x, base)
+* Description: Returns the logarithm of x to the specified base. If no base is provided, it defaults to the natural logarithm (base = e).
+* Use Case: Useful in scientific and financial calculations, where logarithmic growth or decay is involved.
+* Example (Natural Logarithm): python Copy code   import math
+*
+* result = math.log(10)
+* print("Natural logarithm of 10:", result)
+*    Output: sql Copy code   Natural logarithm of 10: 2.302585092994046
+*   
+Example (Logarithm to Base 10):
+go
+Copy code
+ ```python
+ result = math.log(100, 10)
+ print("Logarithm of 100 to base 10:", result)
+ ```
+
+ **Output**:
+ ```
+ Logarithm of 100 to base 10: 2.0
+ ```
+
+9. math.exp(x)
+* Description: Returns e raised to the power of x (i.e., e^x), where e is Euler's number (2.71828...).
+* Use Case: Useful in growth models, compounding interest, or solving natural logarithmic equations.
+* Example: python Copy code   import math
+*
+* result = math.exp(3)
+* print("e raised to the power of 3:", result)
+*    Output: css Copy code   e raised to the power of 3: 20.085536923187668
+*   
+
+10. math.pi
+* Description: A constant that provides the value of π (approximately 3.14159).
+* Use Case: Useful in geometry, especially when dealing with circles or trigonometric functions.
+* Example: python Copy code   import math
+*
+* print("Value of π:", math.pi)
+*    Output:  Copy code   Value of π: 3.141592653589793
+*   
+
+11. math.e
+* Description: A constant representing Euler's number, e (approximately 2.71828).
+* Use Case: Used in exponential functions, natural logarithms, and growth models.
+* Example: python Copy code   import math
+*
+* print("Value of e:", math.e)
+*    Output: yaml Copy code   Value of e: 2.718281828459045
+*   
+
+12. math.sin(x), math.cos(x), math.tan(x)
+* Description: These functions return the sine, cosine, and tangent of x, where x is in radians.
+* Use Case: Useful in trigonometry for calculating angles, waves, and oscillations.
+* Example (Sine): python Copy code   import math
+*
+* result = math.sin(math.pi / 2)
+* print("Sine of π/2 radians:", result)
+*    Output: yaml Copy code   Sine of π/2 radians: 1.0
+*   
+Example (Cosine):
+go
+Copy code
+ ```python
+ result = math.cos(0)
+ print("Cosine of 0 radians:", result)
+ ```
+
+ **Output**:
+ ```
+ Cosine of 0 radians: 1.0
+ ```
+
+13. math.asin(x), math.acos(x), math.atan(x)
+* Description: Returns the inverse of the sine, cosine, and tangent functions, where the result is in radians.
+* Use Case: Useful when working backward from sine, cosine, or tangent values to obtain angles.
+* Example (Arcsine): python Copy code   import math
+*
+* result = math.asin(1)
+* print("Arcsine of 1 (in radians):", result)
+*    Output: scss Copy code   Arcsine of 1 (in radians): 1.5707963267948966
+*   
+
+14. math.degrees(x)
+* Description: Converts angle x from radians to degrees.
+* Use Case: Useful when you need to convert a value from radians to degrees in trigonometric calculations.
+* Example: python Copy code   import math
+*
+* result = math.degrees(math.pi)
+* print("π radians in degrees:", result)
+*    Output: yaml Copy code   π radians in degrees: 180.0
+*   
+
+15. math.radians(x)
+* Description: Converts angle x from degrees to radians.
+* Use Case: Useful when you need to convert a value from degrees to radians for trigonometric functions.
+* Example: python Copy code   import math
+*
+* result = math.radians(180)
+* print("180 degrees in radians:", result)
+*    Output: yaml Copy code   180 degrees in radians: 3.141592653589793
+*   
+
+16. math.isclose(a, b, rel_tol=1e-9, abs_tol=0.0)
+* Description: Returns True if the values a and b are close to each other within a relative or absolute tolerance.
+* Use Case: Useful when working with floating-point arithmetic, where exact equality is difficult to achieve.
+* Example: python Copy code   import math
+*
+* result = math.isclose(0.1 + 0.2, 0.3)
+* print("Is 0.1 + 0.2 close to 0.3?", result)
+*    Output: vbnet Copy code   Is 0.1 + 0.2 close to 0.3? True
+*   
+
+Summary of Key Methods:
+Method	Description
+math.sqrt(x)	Returns the square root of x.
+math.pow(x, y)	Returns x raised to the power y.
+math.ceil(x)	Returns the ceiling of x (smallest integer ≥ x).
+math.floor(x)	Returns the floor of x (largest integer ≤ x).
+math.fabs(x)	Returns the absolute value of x.
+math.factorial(x)	Returns the factorial of x.
+math.gcd(a, b)	Returns the greatest common divisor of a and b.
+math.log(x, base)	Returns the logarithm of x to the specified base.
+math.exp(x)	Returns e raised to the power x.
+math.pi	Returns the value of π.
+math.e	Returns the value of Euler’s number e.
+math.sin(x), math.cos(x), math.tan(x)	Returns the sine, cosine, and tangent of x in radians.
+math.asin(x), math.acos(x), math.atan(x)	Returns the inverse sine, cosine, and tangent of x.
+math.degrees(x)	Converts x from radians to degrees.
+math.radians(x)	Converts x from degrees to radians.
+math.isclose(a, b)	Checks if a and b are close within a tolerance.
+
+
+Random
+
+The random module in Python provides functions to generate random numbers, choose random items from a list, and shuffle data. It’s widely used in simulations, games, testing, and more. Below are the important methods from the random module, along with explanations and examples.
+
+1. random()
+* Description: Returns a random floating-point number between 0.0 (inclusive) and 1.0 (exclusive).
+* Use Case: Useful when you need a random float value in a certain range or as a basis for further calculations.
+* Example: python Copy code   import random
+*
+* rand_float = random.random()
+* print("Random float between 0 and 1:", rand_float)
+*    Output: sql Copy code   Random float between 0 and 1: 0.674565745897
+*   
+
+2. randint(a, b)
+* Description: Returns a random integer N such that a <= N <= b.
+* Use Case: Useful when you need a random integer in a specific range.
+* Example: python Copy code   import random
+*
+* rand_int = random.randint(1, 10)
+* print("Random integer between 1 and 10:", rand_int)
+*    Output: sql Copy code   Random integer between 1 and 10: 7
+*   
+
+3. uniform(a, b)
+* Description: Returns a random floating-point number N such that a <= N <= b.
+* Use Case: Useful when you need a random float within a specific range.
+* Example: python Copy code   import random
+*
+* rand_uniform = random.uniform(10.5, 20.5)
+* print("Random float between 10.5 and 20.5:", rand_uniform)
+*    Output: sql Copy code   Random float between 10.5 and 20.5: 14.23456734589
+*   
+
+4. randrange(start, stop[, step])
+* Description: Returns a randomly selected element from the range [start, stop) with an optional step.
+* Use Case: Useful when you need a random number with a step in a given range.
+* Example: python Copy code   import random
+*
+* rand_range = random.randrange(0, 100, 5)  # Returns a multiple of 5 between 0 and 100
+* print("Random number between 0 and 100 (step 5):", rand_range)
+*    Output: arduino Copy code   Random number between 0 and 100 (step 5): 85
+*   
+
+5. choice(seq)
+* Description: Returns a random element from a non-empty sequence (e.g., a list, string, or tuple).
+* Use Case: Useful for selecting a random item from a list or any sequence.
+* Example: python Copy code   import random
+*
+* fruits = ['apple', 'banana', 'cherry', 'date']
+* rand_fruit = random.choice(fruits)
+* print("Random fruit:", rand_fruit)
+*    Output: mathematica Copy code   Random fruit: cherry
+*   
+
+6. choices(population, weights=None, k=1)
+* Description: Returns a list of k random elements from the population with optional weights.
+* Use Case: Useful when you need multiple random selections from a sequence, possibly with different probabilities (weights).
+* Example: python Copy code   import random
+*
+* colors = ['red', 'green', 'blue', 'yellow']
+* rand_colors = random.choices(colors, weights=[10, 1, 1, 1], k=3)
+* print("Random choices with weights:", rand_colors)
+*    Output: csharp Copy code   Random choices with weights: ['red', 'red', 'yellow']
+*   
+
+7. shuffle(x)
+* Description: Shuffles the sequence x in place (i.e., modifies the original sequence).
+* Use Case: Useful when you need to randomly reorder the elements of a list.
+* Example: python Copy code   import random
+*
+* cards = ['ace', 'king', 'queen', 'jack']
+* random.shuffle(cards)
+* print("Shuffled cards:", cards)
+*    Output: less Copy code   Shuffled cards: ['queen', 'jack', 'ace', 'king']
+*   
+
+8. sample(population, k)
+* Description: Returns a list of k unique random elements from the population. It’s useful when you need a random sample without replacement.
+* Use Case: Useful for random sampling when elements cannot repeat.
+* Example: python Copy code   import random
+*
+* numbers = list(range(1, 11))  # [1, 2, 3, ..., 10]
+* rand_sample = random.sample(numbers, 3)
+* print("Random sample of 3 unique numbers:", rand_sample)
+*    Output: less Copy code   Random sample of 3 unique numbers: [7, 3, 1]
+*   
+
+9. seed(a=None)
+* Description: Initializes the random number generator. If a is provided, it sets the seed, which ensures reproducibility. If a is None, the seed is set to a random value derived from the system clock or other sources of entropy.
+* Use Case: Useful when you want reproducible random sequences for testing or debugging.
+* Example: python Copy code   import random
+*
+* random.seed(10)
+* print("Random number with seed 10:", random.random())
+*
+* random.seed(10)
+* print("Same random number with seed 10:", random.random())
+*    Output: typescript Copy code   Random number with seed 10: 0.5714025946899135
+* Same random number with seed 10: 0.5714025946899135
+*   
+
+10. gauss(mu, sigma)
+* Description: Returns a random floating-point number from a Gaussian (normal) distribution with mean mu and standard deviation sigma.
+* Use Case: Useful in simulations or statistical work where normal distribution is needed.
+* Example: python Copy code   import random
+*
+* rand_gaussian = random.gauss(0, 1)
+* print("Random number from Gaussian distribution (mean=0, stddev=1):", rand_gaussian)
+*    Output: typescript Copy code   Random number from Gaussian distribution (mean=0, stddev=1): 0.13423423456
+*   
+
+11. betavariate(alpha, beta)
+* Description: Returns a random number from a Beta distribution, which is defined by two shape parameters, alpha and beta.
+* Use Case: Used in Bayesian statistics and decision analysis.
+* Example: python Copy code   import random
+*
+* rand_beta = random.betavariate(2, 5)
+* print("Random number from Beta distribution:", rand_beta)
+*    Output: mathematica Copy code   Random number from Beta distribution: 0.12345678
+*   
+
+12. expovariate(lambd)
+* Description: Returns a random number from an exponential distribution with rate parameter lambd. It is used to model the time between events in a Poisson process.
+* Use Case: Useful in queuing theory, simulations, and survival analysis.
+* Example: python Copy code   import random
+*
+* rand_expo = random.expovariate(1.5)
+* print("Random number from Exponential distribution:", rand_expo)
+*    Output: typescript Copy code   Random number from Exponential distribution: 0.45678901234
+*   
+
+13. triangular(low, high, mode)
+* Description: Returns a random number from a triangular distribution within the specified range [low, high], with a mode (most frequent value) in that range.
+* Use Case: Useful for simulations where you want more control over the distribution of random values.
+* Example: python Copy code   import random
+*
+* rand_triangular = random.triangular(1, 10, 5)
+* print("Random number from Triangular distribution:", rand_triangular)
+*    Output: typescript Copy code   Random number from Triangular distribution: 4.56789012345
+*   
+
+Summary of Important Methods:
+Method	Description
+random()	Returns a random float between 0 and 1.
+randint(a, b)	Returns a random integer between a and b (inclusive).
+uniform(a, b)	Returns a random float between a and b.
+randrange(start, stop[, step])	Returns a random number in the range with optional step.
+choice(seq)	Returns a random element from a sequence.
+choices(population, k)	Returns a list of k random elements with replacement.
+shuffle(x)	Shuffles a list in place.
+sample(population, k)	Returns a list of k unique random elements from a population.
+seed(a)	Initializes the random number generator.
+gauss(mu, sigma)	Returns a random float from a Gaussian distribution.
+betavariate(alpha, beta)	Returns a random float from a Beta distribution.
+expovariate(lambd)	Returns a random float from an Exponential distribution.
+triangular(low, high, mode)	Returns a random float from a Triangular distribution.
+
+
+Sys Module
+
+
+The sys module in Python provides access to system-specific parameters and functions, such as input/output, command-line arguments, the Python interpreter, and environment information. Below are some important methods and attributes from the sys module, along with explanations and examples.
+
+1. sys.argv
+* Description: A list of command-line arguments passed to the script. sys.argv[0] is the script name, and the remaining elements are the arguments.
+* Use Case: Useful for command-line scripts where you need to access arguments provided by the user.
+* Example: python Copy code   import sys
+*
+* print("Script Name:", sys.argv[0])
+* if len(sys.argv) > 1:
+*     print("Arguments passed:", sys.argv[1:])
+* else:
+*     print("No arguments passed.")
+*    Command-Line Example:  Copy code   python script.py arg1 arg2
+*    Output: less Copy code   Script Name: script.py
+* Arguments passed: ['arg1', 'arg2']
+*   
+
+2. sys.exit([arg])
+* Description: Exits the Python interpreter by raising a SystemExit exception. The optional argument can be an integer (exit status) or another object (printed before exit).
+* Use Case: Useful for terminating a script early, especially in response to an error condition.
+* Example: python Copy code   import sys
+*
+* if len(sys.argv) < 2:
+*     print("No arguments provided. Exiting.")
+*     sys.exit(1)  # Non-zero status indicates error.
+* else:
+*     print("Proceeding with the script...")
+*    Output: javascript Copy code   No arguments provided. Exiting.
+*   
+
+3. sys.path
+* Description: A list of strings that specifies the search paths for modules. This is initialized from the environment variable PYTHONPATH and defaults to the current directory.
+* Use Case: Useful for adding directories to the module search path programmatically.
+* Example: python Copy code   import sys
+*
+* print("Python Module Search Paths:")
+* for path in sys.path:
+*     print(path)
+*    Output: bash Copy code   Python Module Search Paths:
+* /home/user/projects
+* /usr/lib/python3.8
+* /usr/local/lib/python3.8/dist-packages
+*   
+
+4. sys.stdin, sys.stdout, sys.stderr
+* Description: These attributes refer to the standard input (sys.stdin), output (sys.stdout), and error (sys.stderr) streams.
+* Use Case: Useful for redirecting or handling input and output streams, especially in console applications or error handling.
+* Example: python Copy code   import sys
+*
+* sys.stdout.write("This is standard output\n")
+* sys.stderr.write("This is an error message\n")
+*    Output: vbnet Copy code   This is standard output
+* This is an error message
+*   
+
+5. sys.version
+* Description: A string containing the version of the Python interpreter, including build information.
+* Use Case: Useful for checking the Python version in use, especially when working with version-specific features or packages.
+* Example: python Copy code   import sys
+*
+* print("Python Version:", sys.version)
+*    Output: csharp Copy code   Python Version: 3.8.10 (default, May  3 2021, 08:55:58)
+* [GCC 9.3.0]
+*   
+
+6. sys.platform
+* Description: A string that provides a platform identifier (e.g., 'win32' for Windows, 'linux' for Linux, 'darwin' for macOS).
+* Use Case: Useful for writing platform-specific code.
+* Example: python Copy code   import sys
+*
+* print("Running on platform:", sys.platform)
+*    Output: csharp Copy code   Running on platform: linux
+*   
+
+7. sys.getsizeof(object)
+* Description: Returns the size of an object in bytes.
+* Use Case: Useful for memory profiling and optimization.
+* Example: python Copy code   import sys
+*
+* my_list = [1, 2, 3, 4, 5]
+* print("Size of my_list:", sys.getsizeof(my_list), "bytes")
+*    Output: python Copy code   Size of my_list: 96 bytes
+*   
+
+8. sys.modules
+* Description: A dictionary that maps module names to module objects. It contains all loaded modules.
+* Use Case: Useful for introspecting which modules are currently loaded.
+* Example: python Copy code   import sys
+*
+* print("Loaded Modules:")
+* for module_name in sys.modules:
+*     print(module_name)
+*    Output: python Copy code   Loaded Modules:
+* sys
+* os
+* builtins
+* ...
+*   
+
+9. sys.maxsize
+* Description: The largest integer a Python int can hold, typically the platform's pointer size (64-bit systems will have a larger value).
+* Use Case: Useful when dealing with large numbers or when you need to know the system’s integer limits.
+* Example: python Copy code   import sys
+*
+* print("Max size of an integer:", sys.maxsize)
+*    Output: arduino Copy code   Max size of an integer: 9223372036854775807
+*   
+
+10. sys.getrecursionlimit() and sys.setrecursionlimit(limit)
+* Description: sys.getrecursionlimit() returns the current recursion limit. sys.setrecursionlimit(limit) sets a new recursion limit.
+* Use Case: Useful for controlling the depth of recursion, particularly in recursive functions to avoid RecursionError.
+* Example: python Copy code   import sys
+*
+* print("Current Recursion Limit:", sys.getrecursionlimit())
+*
+* # Setting a new recursion limit
+* sys.setrecursionlimit(2000)
+* print("New Recursion Limit:", sys.getrecursionlimit())
+*    Output: yaml Copy code   Current Recursion Limit: 1000
+* New Recursion Limit: 2000
+*   
+
+11. sys.exc_info()
+* Description: Returns information about the most recent exception caught by an except block, as a tuple of the exception type, value, and traceback object.
+* Use Case: Useful for handling exceptions and debugging.
+* Example: python Copy code   import sys
+*
+* try:
+*     1 / 0
+* except ZeroDivisionError:
+*     exc_type, exc_value, exc_traceback = sys.exc_info()
+*     print("Exception Type:", exc_type)
+*     print("Exception Value:", exc_value)
+*    Output: kotlin Copy code   Exception Type: <class 'ZeroDivisionError'>
+* Exception Value: division by zero
+*   
+
+12. sys.implementation
+* Description: A namespace containing information about the Python implementation being used (e.g., CPython, PyPy).
+* Use Case: Useful for inspecting details about the current Python interpreter.
+* Example: python Copy code   import sys
+*
+* print("Python Implementation:", sys.implementation)
+*    Output: css Copy code   Python Implementation: namespace(name='cpython', cache_tag='cpython-38', version=sys.version_info(major=3, minor=8, micro=10, releaselevel='final', serial=0), hexversion=50858256, ...
+*   
+
+13. sys.byteorder
+* Description: Indicates the native byte order ('little' for little-endian, 'big' for big-endian).
+* Use Case: Useful when handling byte-level operations and ensuring compatibility across different architectures.
+* Example: python Copy code   import sys
+*
+* print("Native byte order:", sys.byteorder)
+*    Output: vbnet Copy code   Native byte order: little
+*   
+
+14. sys.flags
+* Description: Contains information on the command-line flags passed to the Python interpreter (e.g., -O, -B).
+* Use Case: Useful for checking if certain interpreter flags are enabled.
+* Example: python Copy code   import sys
+*
+* print("Python interpreter flags:", sys.flags)
+*    Output: csharp Copy code   Python interpreter flags: namespace(debug=0, inspect=0, interactive=0, optimize=0, ...
+*   
+
+Summary of Key Methods:
+Method/Attribute	Description
+sys.argv	Command-line arguments passed to the script.
+sys.exit([arg])	Exits the program with an optional exit status.
+sys.path	List of directories where Python looks for modules.
+sys.stdin, sys.stdout, sys.stderr	Standard input, output, and error streams.
+sys.version	Python version and build information.
+sys.platform	Platform identifier (e.g., 'linux', 'win32').
+sys.getsizeof(object)	Returns the size of an object in bytes.
+sys.modules	Dictionary of loaded modules.
+sys.maxsize	Maximum size of a Python integer.
+sys.getrecursionlimit()	Gets the current recursion limit.
+sys.setrecursionlimit(limit)	Sets a new recursion limit.
+sys.exc_info()	Returns information about the last exception.
+sys.implementation	Information about the current Python implementation.
+sys.byteorder	Native byte order ('little' or 'big').
+sys.flags	Command-line flags passed to the interpreter.
+
+
+OS Module
+
+The os module in Python provides functions to interact with the operating system. It allows you to handle files, directories, and processes, making it a crucial module for system-level programming. Below are the important methods of the os module, along with explanations and examples.
+
+1. os.getcwd()
+* Description: Returns the current working directory of the process.
+* Use Case: Useful for determining where your program is currently running in the file system.
+* Example: python Copy code   import os
+*
+* current_directory = os.getcwd()
+* print("Current Working Directory:", current_directory)
+*    Output: javascript Copy code   Current Working Directory: /home/user/projects
+*   
+
+2. os.chdir(path)
+* Description: Changes the current working directory to the specified path.
+* Use Case: Used when you need to change the directory context for your program (e.g., for file operations).
+* Example: python Copy code   import os
+*
+* os.chdir("/home/user/projects")
+* print("Changed Directory:", os.getcwd())
+*    Output: javascript Copy code   Changed Directory: /home/user/projects
+*   
+
+3. os.listdir(path)
+* Description: Returns a list of files and directories in the specified path. If no path is specified, it lists the contents of the current directory.
+* Use Case: Useful for retrieving the content of directories.
+* Example: python Copy code   import os
+*
+* files = os.listdir("/home/user/projects")
+* print("Files and Directories:", files)
+*    Output: less Copy code   Files and Directories: ['project1.py', 'project2.py', 'docs', 'README.md']
+*   
+
+4. os.mkdir(path)
+* Description: Creates a new directory at the specified path.
+* Use Case: Used when you need to create new directories programmatically.
+* Example: python Copy code   import os
+*
+* os.mkdir("new_directory")
+* print("Directory Created")
+*    Output: mathematica Copy code   Directory Created
+*   
+
+5. os.rmdir(path)
+* Description: Removes the specified directory. The directory must be empty for it to be deleted.
+* Use Case: Useful for removing empty directories.
+* Example: python Copy code   import os
+*
+* os.rmdir("new_directory")
+* print("Directory Removed")
+*    Output: mathematica Copy code   Directory Removed
+*   
+
+6. os.remove(path)
+* Description: Deletes the specified file.
+* Use Case: Used to delete a file by specifying its path.
+* Example: python Copy code   import os
+*
+* os.remove("old_file.txt")
+* print("File Deleted")
+*    Output: arduino Copy code   File Deleted
+*   
+
+7. os.rename(src, dst)
+* Description: Renames a file or directory from src to dst.
+* Use Case: Used to rename files or directories.
+* Example: python Copy code   import os
+*
+* os.rename("old_file.txt", "new_file.txt")
+* print("File Renamed")
+*    Output: arduino Copy code   File Renamed
+*   
+
+8. os.path.exists(path)
+* Description: Returns True if the specified path exists; otherwise, returns False.
+* Use Case: Useful for checking if a file or directory exists before performing operations on it.
+* Example: python Copy code   import os
+*
+* if os.path.exists("example.txt"):
+*     print("File exists")
+* else:
+*     print("File does not exist")
+*    Output: arduino Copy code   File does not exist
+*   
+
+9. os.path.join(path, *paths)
+* Description: Joins one or more path components intelligently, taking care of platform-specific path separators.
+* Use Case: Used when constructing paths to ensure compatibility across operating systems.
+* Example: python Copy code   import os
+*
+* full_path = os.path.join("/home", "user", "projects", "file.txt")
+* print("Joined Path:", full_path)
+*    Output: javascript Copy code   Joined Path: /home/user/projects/file.txt
+*   
+
+10. os.environ
+* Description: A dictionary-like object containing the user’s environment variables.
+* Use Case: Useful for accessing and manipulating environment variables.
+* Example: python Copy code   import os
+*
+* home_directory = os.environ.get("HOME")
+* print("Home Directory:", home_directory)
+*    Output: javascript Copy code   Home Directory: /home/user
+*   
+
+11. os.getpid()
+* Description: Returns the current process ID.
+* Use Case: Used when you need to retrieve the ID of the running process.
+* Example: python Copy code   import os
+*
+* process_id = os.getpid()
+* print("Current Process ID:", process_id)
+*    Output: arduino Copy code   Current Process ID: 12345
+*   
+
+12. os.system(command)
+* Description: Executes a system command as a subprocess. It returns the exit status of the command.
+* Use Case: Useful for executing system-level commands from within a Python script.
+* Example: python Copy code   import os
+*
+* os.system("ls")
+*    Output:  Copy code   file1.txt  file2.py  directory1
+*   
+
+13. os.walk(top, topdown=True, onerror=None, followlinks=False)
+* Description: Generates file names in a directory tree, walking either top-down or bottom-up.
+* Use Case: Useful for traversing directory structures.
+* Example: python Copy code   import os
+*
+* for root, dirs, files in os.walk("/home/user/projects"):
+*     print("Root:", root)
+*     print("Directories:", dirs)
+*     print("Files:", files)
+*    Output: javascript Copy code   Root: /home/user/projects
+* Directories: ['project1', 'project2']
+* Files: ['file1.py', 'file2.py']
+*   
+
+14. os.getlogin()
+* Description: Returns the name of the user logged into the current session.
+* Use Case: Useful for identifying the current user running the script.
+* Example: python Copy code   import os
+*
+* user = os.getlogin()
+* print("Current User:", user)
+*    Output: sql Copy code   Current User: user
+*   
+
+Summary of Key Methods:
+Method	Description
+os.getcwd()	Get current working directory.
+os.chdir(path)	Change the current working directory.
+os.listdir(path)	List files and directories in a specified path.
+os.mkdir(path)	Create a new directory.
+os.rmdir(path)	Remove an empty directory.
+os.remove(path)	Delete a file.
+os.rename(src, dst)	Rename a file or directory.
+os.path.exists(path)	Check if a file or directory exists.
+os.path.join(path, *paths)	Join one or more path components.
+os.environ	Access environment variables.
+os.getpid()	Get the current process ID.
+os.system(command)	Execute a system command.
+os.walk(top)	Generate file names in a directory tree.
+os.getlogin()	Get the name of the logged-in user.
+
+
+Datetime Module
+
+
+The datetime module in Python provides classes for manipulating dates and times. It's more versatile and higher-level compared to the time module and allows you to work with dates, times, intervals, and time zones. Below are some important methods and concepts from the datetime module, along with explanations and examples.
+1. datetime.now()
+* Description: Returns the current local date and time as a datetime object.
+* Use Case: Useful when you need the current date and time in your local time zone.
+* Example:
+python
+Copy code
+from datetime import datetime
+
+current_datetime = datetime.now()
+print("Current local date and time:", current_datetime)
+Output:
+sql
+Copy code
+Current local date and time: 2024-10-21 10:15:00.123456
+2. datetime.today()
+* Description: Returns the current local date and time, similar to datetime.now(), but without the option to pass a timezone.
+* Use Case: Used when you want the current date and time without worrying about time zones.
+* Example:
+python
+Copy code
+from datetime import datetime
+
+today = datetime.today()
+print("Today's date and time:", today)
+Output:
+vbnet
+Copy code
+Today's date and time: 2024-10-21 10:15:00.123456
+3. datetime.utcnow()
+* Description: Returns the current UTC date and time as a datetime object.
+* Use Case: Useful when you need the current time in UTC instead of the local time zone.
+* Example:
+python
+Copy code
+from datetime import datetime
+
+utc_time = datetime.utcnow()
+print("Current UTC time:", utc_time)
+Output:
+sql
+Copy code
+Current UTC time: 2024-10-21 09:15:00.123456
+4. datetime.strptime()
+* Description: Parses a string into a datetime object according to a specified format.
+* Use Case: Useful when you need to convert a string representation of a date/time into a datetime object.
+* Example:
+python
+Copy code
+from datetime import datetime
+
+date_string = "2024-10-21 10:15:00"
+date_object = datetime.strptime(date_string, "%Y-%m-%d %H:%M:%S")
+print("Parsed datetime object:", date_object)
+Output:
+yaml
+Copy code
+Parsed datetime object: 2024-10-21 10:15:00
+5. datetime.strftime()
+* Description: Converts a datetime object to a string based on a specified format.
+* Use Case: Used to format datetime objects into readable strings.
+* Example:
+python
+Copy code
+from datetime import datetime
+
+now = datetime.now()
+formatted_date = now.strftime("%Y-%m-%d %H:%M:%S")
+print("Formatted date:", formatted_date)
+Output:
+yaml
+Copy code
+Formatted date: 2024-10-21 10:15:00
+6. datetime.date()
+* Description: Extracts the date (year, month, and day) from a datetime object.
+* Use Case: Used when you need just the date without the time component.
+* Example:
+python
+Copy code
+from datetime import datetime
+
+now = datetime.now()
+current_date = now.date()
+print("Current date:", current_date)
+Output:
+sql
+Copy code
+Current date: 2024-10-21
+7. datetime.time()
+* Description: Extracts the time (hours, minutes, seconds) from a datetime object.
+* Use Case: Used when you need just the time without the date component.
+* Example:
+python
+Copy code
+from datetime import datetime
+
+now = datetime.now()
+current_time = now.time()
+print("Current time:", current_time)
+Output:
+sql
+Copy code
+Current time: 10:15:00.123456
+8. datetime.combine()
+* Description: Combines a date and a time into a datetime object.
+* Use Case: Useful when you have separate date and time objects and want to combine them.
+* Example:
+python
+Copy code
+from datetime import datetime, time, date
+
+d = date(2024, 10, 21)
+t = time(10, 15)
+combined_datetime = datetime.combine(d, t)
+print("Combined datetime:", combined_datetime)
+Output:
+yaml
+Copy code
+Combined datetime: 2024-10-21 10:15:00
+9. datetime.timedelta()
+* Description: Represents the difference between two dates or times.
+* Use Case: Used when you need to calculate intervals between dates/times or add/subtract time from a datetime object.
+* Example:
+python
+Copy code
+from datetime import datetime, timedelta
+
+now = datetime.now()
+two_days_ago = now - timedelta(days=2)
+print("Two days ago:", two_days_ago)
+Output:
+yaml
+Copy code
+Two days ago: 2024-10-19 10:15:00.123456
+Adding a timedelta:
+python
+Copy code
+two_days_later = now + timedelta(days=2)
+print("Two days later:", two_days_later)
+Output:
+yaml
+Copy code
+Two days later: 2024-10-23 10:15:00.123456
+10. datetime.replace()
+* Description: Replaces specified parts of a datetime object (e.g., change the year, month, or hour).
+* Use Case: Used when you need to modify specific components of a datetime object without affecting others.
+* Example:
+python
+Copy code
+from datetime import datetime
+
+now = datetime.now()
+modified_datetime = now.replace(year=2025, hour=15)
+print("Modified datetime:", modified_datetime)
+Output:
+yaml
+Copy code
+Modified datetime: 2025-10-21 15:15:00.123456
+11. datetime.weekday()
+* Description: Returns the day of the week as an integer, where Monday is 0 and Sunday is 6.
+* Use Case: Used when you need to determine the day of the week for a specific date.
+* Example:
+python
+Copy code
+from datetime import datetime
+
+today = datetime.now()
+day_of_week = today.weekday()
+print("Day of the week (0=Monday, 6=Sunday):", day_of_week)
+Output:
+mathematica
+Copy code
+Day of the week (0=Monday, 6=Sunday): 0
+12. datetime.isoformat()
+* Description: Returns the date and time in ISO 8601 format (YYYY-MM-DDTHH:MM:SS).
+* Use Case: Used when you need a standardized string representation of a datetime object.
+* Example:
+python
+Copy code
+from datetime import datetime
+
+now = datetime.now()
+iso_format = now.isoformat()
+print("ISO format:", iso_format)
+Output:
+yaml
+Copy code
+ISO format: 2024-10-21T10:15:00.123456
+13. datetime.timestamp()
+* Description: Converts a datetime object into a Unix timestamp (seconds since the epoch).
+* Use Case: Used when you need to convert a datetime object to a Unix timestamp.
+* Example:
+python
+Copy code
+from datetime import datetime
+
+now = datetime.now()
+timestamp = now.timestamp()
+print("Unix timestamp:", timestamp)
+Output:
+sql
+Copy code
+Unix timestamp: 1697887223.123456
+Summary of Important datetime Methods
+Method	Description
+datetime.now()	Returns current local date and time.
+datetime.today()	Returns current local date and time (same as now).
+datetime.utcnow()	Returns current UTC date and time.
+datetime.strptime(string, format)	Parses a string to datetime according to the format.
+datetime.strftime(format)	Formats datetime into a string.
+datetime.date()	Extracts the date component from datetime.
+datetime.time()	Extracts the time component from datetime.
+datetime.combine(date, time)	Combines a date and a time into datetime.
+datetime.timedelta()	Represents the difference between two dates/times.
+datetime.replace()	Replaces components of a datetime object.
+datetime.weekday()	Returns the day of the week as an integer.
+datetime.isoformat()	Returns datetime in ISO 8601 format.
+datetime.timestamp()	Converts datetime to a Unix timestamp.
+
+
+Time module
+
+The Python time module provides various time-related functions that allow you to work with the system clock, manipulate time intervals, and measure execution times in your Python programs. Below are some of the important methods from the time module, along with explanations and examples.
+1. time()
+* Description: Returns the current time in seconds since the epoch (the point where time starts, January 1, 1970, 00:00:00 UTC).
+* Use Case: Useful for measuring the time of events or calculating the difference between time points.
+* Example:
+python
+Copy code
+import time
+
+current_time = time.time()
+print("Current time in seconds since the epoch:", current_time)
+Output:
+sql
+Copy code
+Current time in seconds since the epoch: 1697887223.5718598
+2. sleep(seconds)
+* Description: Suspends (pauses) the execution of the current thread for a specified number of seconds.
+* Use Case: Used when you need to delay execution for a while, often used in looping or timed operations.
+* Example:
+python
+Copy code
+import time
+
+print("Start")
+time.sleep(2)  # Pauses execution for 2 seconds
+print("End after 2 seconds")
+Output:
+sql
+Copy code
+Start
+(Pauses for 2 seconds)
+End after 2 seconds
+3. ctime(seconds)
+* Description: Converts a time in seconds (from the epoch) into a human-readable string format. If no argument is provided, it uses the current time.
+* Use Case: Used when you want to convert epoch time into a readable date and time format.
+* Example:
+python
+Copy code
+import time
+
+readable_time = time.ctime()
+print("Current human-readable time:", readable_time)
+Output:
+sql
+Copy code
+Current human-readable time: Mon Oct 21 10:00:00 2024
+4. gmtime(seconds)
+* Description: Converts seconds since the epoch to a struct_time in UTC (Coordinated Universal Time).
+* Use Case: Useful when you need to work with time in UTC rather than local time.
+* Example:
+python
+Copy code
+import time
+
+utc_time = time.gmtime()
+print("UTC time:", utc_time)
+Output:
+css
+Copy code
+UTC time: time.struct_time(tm_year=2024, tm_mon=10, tm_mday=21, tm_hour=10, tm_min=0, tm_sec=0, tm_wday=0, tm_yday=295, tm_isdst=0)
+5. localtime(seconds)
+* Description: Converts seconds since the epoch into struct_time in local time.
+* Use Case: Used to get the local time representation from epoch seconds.
+* Example:
+python
+Copy code
+import time
+
+local_time = time.localtime()
+print("Local time:", local_time)
+Output:
+css
+Copy code
+Local time: time.struct_time(tm_year=2024, tm_mon=10, tm_mday=21, tm_hour=10, tm_min=0, tm_sec=0, tm_wday=0, tm_yday=295, tm_isdst=1)
+6. strftime(format, t)
+* Description: Converts a struct_time or tuple representing a time to a string as per the specified format. The format can include various directives to control how the time is represented (e.g., %Y for year, %m for month).
+* Use Case: Used when you need to represent time in a specific string format.
+* Example:
+python
+Copy code
+import time
+
+formatted_time = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
+print("Formatted local time:", formatted_time)
+Output:
+lua
+Copy code
+Formatted local time: 2024-10-21 10:00:00
+7. strptime(string, format)
+* Description: Parses a string representing a time according to a specified format and returns a struct_time object.
+* Use Case: Used to convert a string representation of time into a struct_time object.
+* Example:
+python
+Copy code
+import time
+
+time_string = "2024-10-21 10:00:00"
+parsed_time = time.strptime(time_string, "%Y-%m-%d %H:%M:%S")
+print("Parsed time:", parsed_time)
+Output:
+css
+Copy code
+Parsed time: time.struct_time(tm_year=2024, tm_mon=10, tm_mday=21, tm_hour=10, tm_min=0, tm_sec=0, tm_wday=0, tm_yday=295, tm_isdst=-1)
+8. mktime(t)
+* Description: Converts a struct_time or tuple representing local time to seconds since the epoch.
+* Use Case: Used when you want to convert a struct_time to a timestamp (seconds since the epoch).
+* Example:
+python
+Copy code
+import time
+
+local_time = time.localtime()
+timestamp = time.mktime(local_time)
+print("Timestamp from local time:", timestamp)
+Output:
+sql
+Copy code
+Timestamp from local time: 1697887223.0
+9. perf_counter()
+* Description: Returns a high-resolution timestamp that can be used for measuring short durations. It includes time spent during sleep and is more precise than time().
+* Use Case: Useful for measuring the performance or time taken by small sections of code.
+* Example:
+python
+Copy code
+import time
+
+start_time = time.perf_counter()
+time.sleep(1)
+end_time = time.perf_counter()
+
+print("Elapsed time:", end_time - start_time)
+Output:
+css
+Copy code
+Elapsed time: 1.00123456
+10. monotonic()
+* Description: Returns the time in seconds that cannot go backward, i.e., it’s guaranteed to always increase. This is useful for measuring intervals but cannot be used to get the actual date or time.
+* Use Case: Useful when you want to measure time intervals and avoid issues with system clock adjustments.
+* Example:
+python
+Copy code
+import time
+
+start_time = time.monotonic()
+time.sleep(1)
+end_time = time.monotonic()
+
+print("Monotonic elapsed time:", end_time - start_time)
+Output:
+css
+Copy code
+Monotonic elapsed time: 1.00123456
+11. process_time()
+* Description: Returns the CPU time (in seconds) used by the current process. This doesn’t count time when the process is idle (e.g., when waiting for I/O).
+* Use Case: Useful when you want to measure the CPU usage of a process, excluding time spent waiting.
+* Example:
+python
+Copy code
+import time
+
+start_cpu_time = time.process_time()
+time.sleep(1)  # Sleep time is not included in process time
+end_cpu_time = time.process_time()
+
+print("CPU time used:", end_cpu_time - start_cpu_time)
+Output:
+css
+Copy code
+CPU time used: 0.00023456
+Summary of Important Methods:
+Method	Description
+time()	Returns the current time in seconds since epoch.
+sleep(seconds)	Pauses execution for a specified time.
+ctime(seconds)	Converts seconds to a human-readable time string.
+gmtime(seconds)	Converts seconds to struct_time in UTC.
+localtime(seconds)	Converts seconds to struct_time in local time.
+strftime(format, t)	Converts struct_time to a formatted string.
+strptime(string, format)	Parses a string to struct_time.
+mktime(t)	Converts struct_time to seconds since epoch.
+perf_counter()	High-resolution timer for performance measurement.
+monotonic()	Always increasing timer for measuring intervals.
+process_time()	CPU time used by the current process.

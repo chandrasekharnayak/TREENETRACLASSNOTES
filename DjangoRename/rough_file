@@ -1,0 +1,105 @@
+template
+template is noothing just html file
+
+so view is a business login write in python file and template is our view representation
+
+Template is used by view function, lastly show to end user
+
+start project
+start app
+add the application name inside settings.py
+create a templates folder in our main project
+    in that template folder create a separted folder with our app name
+    in that folder we have to create out html file or template files
+
+add templates folder path inside settings.py
+define view function
+define url patterns
+runserver
+send the request
+
+
+
+Project1
+    test1
+    test2
+    templates
+        test1
+            *html
+            *css
+        test2
+            *html
+            *css
+    Project1
+    manage.py
+
+import os
+print(__file__)
+print(os.path.abspath(__file__))
+BASE_DIR=os.path.dirname(os.path.abspath(__file__))
+TEMPLATE_DIR = os.path.join(BASE_DIR,'templates')
+
+
+templates
+
+template tags| template flags | template variables
+
+put the dynamic values in fronend-- logical data put in html file
+
+{{}} -- template tagging
+
+
+#Working with Static files
+img, css
+1.Create a folder name static
+2.create a another folder img--- .png,.jpeg,.jpg
+3.creare a another folder css--- .css
+
+from pathlib import Path
+import os
+
+# Build paths inside the project like this: BASE_DIR / 'subdir'.
+BASE_DIR = Path(__file__).resolve().parent.parent
+TEMPLATE_DIR = os.path.join(BASE_DIR,'templates')
+STATIC_DIR = os.path.join(BASE_DIR,'static')
+
+STATIC_URL = 'static/'
+STATICFILES_DIRS = [
+STATIC_DIR,
+]
+
+
+jinja2 :- create a relation between static files data and frontend html file
+
+{% %}----- expression way of jinja2
+{%load staticfiles%}
+
+
+
+http://127.0.0.1:8000/user_details
+
+
+#working with models and databases
+python manage.py shell
+>>> from django.db import connection
+>>> c = connection.cursor()
+
+makemigration
+migrate
+
+http://127.0.0.1:8000/admin
+
+python manage.py createsuperuser
+
+Username (leave blank to use 'treenetra'): treenetra
+Email address: treenetra@test.com
+Password:Password@123
+Password (again):Password@123
+Superuser created successfully.
+
+
+python manage.py sqlmigrate homepage 0001
+
+-------------------9/7
+
+http://127.0.0.1:8000/emp_deatils

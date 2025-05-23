@@ -1,0 +1,89 @@
+how to connect call over the network.
+
+1.Call initiation(Dialing)
+
+    BTS(Base Transceiver Station)
+
+    BSC (Base Station Controller)
+    MSC( Mobile switching center)
+
+2.Call setup(Signaling)
+    HLR(Home Location Register)
+    VLR(Visitor Location Register)
+    PSTN(public switched telephone network)
+    SS7(Signaling System No 7)
+
+3.Call Establishment(Connecting the voice path)
+
+    CSN(circuit-switched networks)
+    Packet-switched network(PSN) -- IP based
+
+
+4. Balance Deducation(Billing)
+
+    OCS(Online charging system)
+    CDR(Call Deatil Record)
+
+5.Call Termination.
+
+
+
+call start
+|
+|
+MSC log call info
+|
+|
+CDR is generated
+|
+|
+Mediation System Collects and Normalizes CDR
+|
+|
+Billing system rates the call
+|
+|
+Balance Deducation or record Storage
+|
+|
+Call End
+|
+|
+CDR finalized and Stored.
+
+
+
+
+
+1. Call initation and switching logging.
+    CSCF (Call session Control Function) ip based
+    MSC:- circuite based.
+
+2.CDR FIELDS and Data Captured.
+
+    caller information:- MSISDN(mabile station international subscriber directory number)
+    called party information:- MSISDN of the called party.
+    Call start and End Times:- (%h-%m-%s)
+    call duration
+    call Type:- Voice,SMS,Data or other services.
+    Usage Details:- Data Volume(for data sessions), the number of sms message.
+    Network element information:-
+    Location information:-
+    Charging Parameter:-
+
+ 3. CDR generation
+
+ 4. CDR collection and Mediation.
+
+ 4 Rating and Billing
+
+
+
+
+
+
+
+
+
+
+

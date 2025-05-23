@@ -1,0 +1,4 @@
+Smoke testing is a preliminary software testing process that verifies the basic functionality of a new software build or release.
+It's like a quick health check to ensure the most critical features are working before more comprehensive testing is
+performed. This type of testing helps identify major issues early, preventing wasted time and resources on further
+testing if the build is fundamentally broken.

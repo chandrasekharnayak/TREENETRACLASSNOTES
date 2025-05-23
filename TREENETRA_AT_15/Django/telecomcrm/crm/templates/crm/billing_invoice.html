@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Billing and Invoice</title>
+</head>
+<body>
+  <h2>Billing and Invoice for Order #{{ order.id }}</h2>
+  <form method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit">Make Payment</button>
+  </form>
+  <a href="{% url 'crm:dashboard' %}">Back to Dashboard</a>
+</body>
+</html>

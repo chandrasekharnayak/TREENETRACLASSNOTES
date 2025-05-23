@@ -1,0 +1,207 @@
+limitation of python:-
+---------------------
+1.Mobile application development.
+2.Banking application development.(Payment Gateway)
+
+
+Features of Python:-
+-------------------
+1.Python is freeware and open-source language.
+2.Python is a high level programming language. coz it's support both oops and pops concept scripting.
+3.Python is a platfrom ind. and portability.(PVM:- python virtual machine.)(jython,jpython,cpython,rubyruby)
+4.Python is a dynamically typed language.
+5.Python is a interpeter langauge.
+6.Python have 65k+ lib, a huge and extensive lib.
+7.Python is case sensitive language.
+
+Reserved words or Keywords
+-------------------------
+35 --- python self use.
+
+['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except',
+'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try',
+'while', 'with', 'yield']
+
+
+Identifiers
+-----------
+
+It's a name in python, for what purpose a python wants a name for declration.
+variable
+function
+class
+module - python page, who conatins class, function and variables. -- name
+
+In python everything is an Object.
+
+
+arpita ----- marathahalli -----   location -- send ------ Manisha (whtsapp) ---location is mara
+kr puram ----- location --- kr puram ------ location
+
+
+variable ----- data to data khud ko variy
+
+
+
+variable_name = data1
+
+variable_name = data2
+
+
+arpita = 'Marathahalli'
+arpita = 'kr puram'
+
+
+cover --- logic
+logic ----- fib  6  (1 ,6)
+
+321- fib(321-327)
+
+567--fib(567-573)
+
+page -- 2
+
+Mahindra.file
+
+class Scorpio:
+    def functon1:
+        variable
+    def finction2
+
+class Xuv700:
+    def func
+    de func2
+
+class Thar:
+    def func1
+    def func2
+
+Identifiers Rules:-
+------------------
+1.its only use upper ,lower and digit.
+2.From special symbol, it's allowes only underscore(_) symbol.
+3.Python is a case sensitive langauge.
+4.a idenitifier name can not start with a digit.
+
+
+Caseing --- its way to decalre the idenitifier.
+camel caseing , snake caseing
+
+camel(Upper case, lower case and digit) - Module,Class,folder
+Everyword first char should be upper and rest are lower
+as per python digit can not start with first.
+StateBankOfIndia10927
+
+Snake(lower,digit, _)- variable,function, module,file
+each word separate with another word help of _.
+as per python digit can not start with first.
+state_bank_of_india_10927
+
+
+state bank of india 10927
+
+access specifier
+x = 10 ---- normal variable
+_x = 10 --- protected varaible(with permission then you can use)
+__x = 10 --- private variable(not use)
+___x = 10 --- magic variable(not use)
+
+----------------------------------------- Data Type----------------------
+
+Char-- string
+Numeric --- decimal
+Collection, box --- char,num
+
+14 types data.
+
+integer--- class and function   int()
+float   --- float()
+complex -- complex()
+boolean --- bool()
+String -- str
+List--- list
+tuple -- tuple
+set -- set
+frozenset-- fronzenset
+bytes-- bytes
+bytearray-- bytearray
+range -- range
+dictionary -- dict
+None--- None(class)
+
+Garbage collection:-
+
+a = 10
+
+b = ?
+
+
+
+10(4579108096) ----------------- a   , b  , c
+
+python ka memory management
+privat heap --- memory area ----- garabage
+a = 10
+
+
+what is an int.
+
+ - inf  to + inf all the whole numbers are known as int.
+
+float:-
+    decimal -- -inf to +inf --- all decimal num -- float
+
+complex -- real + imag
+
+what is real number ? combination of int and float know as real
+
+
+j2 = -1
+
+j2 = -16  -- (unsolved)
+
+boolean :- bool  - True and False
+
+-----------------------------------------------
+string:-
+cot
+' '- single
+" "- double
+''' '''- single triple
+""" """- double triple cot
+
+flow control
+-------------
+conditional statement
+if elif else
+
+iterative statement
+--------------------
+for , while
+
+transfer statement
+-----------------
+break, continue, pass
+
+
+iteration based collection
+
+
+File Handeling ---
+Exception handeling
+Regular Expression
+Oops
+
+
+
+
+
+
+
+
+
+
+
+
+
+

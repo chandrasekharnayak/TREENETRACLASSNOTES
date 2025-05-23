@@ -1,0 +1,17 @@
+what is a file ?
+file a data storage area. and contains differnet kind of data in differenet file system.?
+.txt,.py, .csv, .xml, .json, .yml, .java, .sql
+.mp3,.mp4,.png,.jpg,.pdf
+
+
+text file(.txt,.py, .csv, .xml, .json, .yml, .java, .sql)
+binary file(.mp3,.mp4,.png,.jpg,.pdf)
+
+how to read a file or handel file?
+modes
+-------
+r:-read
+w:- write
+a:- append
+
+var = open(file_location,modes)

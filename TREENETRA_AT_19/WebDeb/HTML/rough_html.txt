@@ -1,0 +1,135 @@
+HTML
+Hyper text mark-up lang for creating web pages
+web page strcture.
+.html (file extension)
+tags :- <>
+<>
+
+</>
+
+<!DOCTYPE html>:- declration defines that this documents is an HTML document.
+<html> tag is the root element of HTML page
+<head> tag contains meta information of an HTML page
+    <title> tag specifies a title for the HTML page
+
+<body> tag define the document's body and is a containmer for all visiable content,
+such heading, paragrahs etc..
+
+<tagname>  contains  </tagname>
+
+<h1> My Heading </h1>
+
+
+<tagname attribute='value', attribute2='value2',.....>   </tagname>
+
+HTML links
+-----------
+<a> </a> :- ancheor tag
+
+<a href='link'> about the link </a>
+
+HTML Images
+-----------
+<img src='destination' width='' height= ''>
+
+
+style :-attribute provide design
+
+HTML Formattings
+--------------
+<b> bold
+<strong> important text
+<i> italic
+<em> emphasized
+<mark> marked
+<small> small text
+<del> delete text
+
+
+HTML comments
+HTML CSS
+HTML Page title
+HTML table web
+HTML List
+HTML div
+HTML Classes
+HTML id
+iframe
+javascripts
+file path = src
+forms
+input types
+media
+apis
+geolocation
+drag and drop
+dropdown
+web storage
+
+
+css integrat with html
+-----------------------
+
+inside the head tag create link tag pass styleshee and connect href in style.css
+
+Webtable
+-------
+<table> --- table intitalization
+<tr> :- table row
+<th> :- table heading ( columns)
+<td> :- table data
+
+HTML List
+-----------
+ul :- unorder list
+ol :- order list
+li :- list item
+dl :- description list
+dt :- a term in description list
+dd :- a term in description list
+
+
+HTML div
+--------
+div elemet is used to as a container.
+
+
+webpage
+
+    section
+    form
+        username
+        poassword
+        submit
+
+    sec
+    company deatils
+
+    sec
+    comapny owner deatils
+
+    sec
+    compnay start date and vision of compny
+
+
+
+create web page
+
+create all the mandatory field
+
+first name - place holder(only char)
+sure name - place holder (only char)
+mobile number :- only int
+
+check box :- chose subjects (math, science, history, geography)
+
+radio :- male female
+
+dropdown :- school, college, institute
+
+submit button
+
+
+
+
+

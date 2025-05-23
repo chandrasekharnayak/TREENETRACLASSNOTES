@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Multiple Select Dropdown</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    select {
+      width: 200px;
+      height: 120px;
+    }
+    button {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Select Multiple Options</h1>
+
+  <form id="myForm">
+    <label for="choices">Choose your options:</label>
+    <select id="choices" name="choices[]" multiple required>
+      <option value="apple">Apple</option>
+      <option value="banana">Banana</option>
+      <option value="orange">Orange</option>
+      <option value="mango">Mango</option>
+      <option value="grape">Grape</option>
+    </select>
+
+    <br>
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    document.getElementById("myForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      const selectedOptions = Array.from(document.getElementById("choices").selectedOptions).map(option => option.value);
+      alert("You selected: " + selectedOptions.join(", "));
+    });
+  </script>
+
+</body>
+</html>

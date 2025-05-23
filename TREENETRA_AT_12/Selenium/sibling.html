@@ -1,0 +1,84 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Sample Page</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--    <div id="main">-->
+<!--        <div class="container">-->
+<!--            <h1>Main Header</h1>-->
+<!--            <p class="intro">This is an introduction paragraph.</p>-->
+<!--            <p class="content">This is the first content paragraph.</p>-->
+<!--            <p class="content">This is the second content paragraph.</p>-->
+<!--            <p class="conclusion">This is the conclusion paragraph.</p>-->
+<!--        </div>-->
+<!--        <div class="footer">-->
+<!--            <p>Footer information here.</p>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Autosuggestive Dropdown</title>
+    <style>
+        /* Basic styling for the dropdown */
+        #suggestions {
+            border: 1px solid #ccc;
+            display: none;
+            position: absolute;
+            background-color: white;
+            max-height: 100px;
+            overflow-y: auto;
+            width: 200px;
+        }
+        .suggestion {
+            padding: 8px;
+            cursor: pointer;
+        }
+        .suggestion:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Autosuggestive Dropdown</h1>
+    <input type="text" id="search" oninput="showSuggestions(this.value)" placeholder="Start typing..." />
+    <div id="suggestions"></div>
+
+    <script>
+        const items = ["Apple","America","Amela","Amiba","Amusa", "Banana", "Cherry", "Date", "Fig", "Grape", "Kiwi", "Lemon", "Mango", "Orange", "Papaya"];
+
+        function showSuggestions(value) {
+            const suggestionsDiv = document.getElementById('suggestions');
+            suggestionsDiv.innerHTML = '';
+            if (value.length === 0) {
+                suggestionsDiv.style.display = 'none';
+                return;
+            }
+
+            const filteredItems = items.filter(item => item.toLowerCase().includes(value.toLowerCase()));
+            if (filteredItems.length === 0) {
+                suggestionsDiv.style.display = 'none';
+                return;
+            }
+
+            filteredItems.forEach(item => {
+                const div = document.createElement('div');
+                div.classList.add('suggestion');
+                div.textContent = item;
+                div.onclick = () => {
+                    document.getElementById('search').value = item;
+                    suggestionsDiv.style.display = 'none';
+                };
+                suggestionsDiv.appendChild(div);
+            });
+
+            suggestionsDiv.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
