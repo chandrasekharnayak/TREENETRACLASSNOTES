@@ -1,0 +1,140 @@
+1. Introduction to Playwright
+What is Playwright?
+
+Playwright vs Selenium
+
+Architecture of Playwright
+
+Supported browsers and languages
+
+Installing Playwright for Python
+
+First Playwright script (simple example)
+
+2. Playwright Basics with Python
+Browser launch options (Chromium, Firefox, WebKit)
+
+Opening and closing browser
+
+Opening a new context and page
+
+Navigating to a website
+
+Locating elements:
+
+CSS selectors
+
+XPath
+
+Role, text, and custom selectors
+
+Element actions:
+
+click(), fill(), type(), check(), uncheck(), select_option()
+
+3. Waiting Mechanisms
+Auto-waiting in Playwright
+
+Explicit waits (wait_for_selector())
+
+Assertions and checks
+
+Handling slow-loading elements
+
+4. Advanced User Interactions
+Mouse and keyboard actions
+
+Uploading and downloading files
+
+Handling dropdowns
+
+Handling alerts, popups, and dialogs
+
+Scrolling and viewport resizing
+
+5. Working with Frames and iFrames
+Switching frames
+
+Handling nested frames
+
+Accessing elements inside frames
+
+6. Network Interception and Mocking
+Intercepting API requests and responses
+
+Modifying or blocking requests
+
+Mocking network responses
+
+7. Handling Multiple Pages and Tabs
+Opening new tabs/windows
+
+Switching between pages
+
+Communicating between pages
+
+8. Test Automation Framework with Pytest
+Introduction to pytest
+
+Structuring test cases
+
+Using conftest.py for fixtures
+
+Setup and teardown methods
+
+Parameterized tests
+
+Grouping tests using markers
+
+9. Reporting and Screenshots
+Capturing screenshots
+
+Recording videos
+
+HTML reports using pytest-html or allure
+
+10. Parallel Execution and Test Isolation
+Running tests in parallel with pytest-xdist
+
+Isolating contexts/browsers
+
+Using multiple test data sets
+
+11. Handling Authentication
+Basic Authentication
+
+Login via UI
+
+Session storage and cookies
+
+Persistent login
+
+12. Playwright CodeGen Tool
+Generating code using Playwright Codegen
+
+Modifying generated scripts
+
+13. CI/CD Integration
+Running Playwright tests in GitHub Actions, Jenkins, or GitLab
+
+Headless execution on CI servers
+
+Saving artifacts: logs, screenshots, videos
+
+14. Best Practices
+Using Page Object Model (POM)
+
+Modular code design
+
+Debugging techniques
+
+Maintaining stable locators
+
+15. Bonus Topics
+Testing single-page applications (SPA)
+
+Visual testing with Playwright
+
+Accessibility testing
+
+Localization/Internationalization testing

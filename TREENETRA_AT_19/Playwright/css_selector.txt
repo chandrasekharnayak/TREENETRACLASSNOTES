@@ -1,0 +1,24 @@
+css selector
+
+css (casacding style sheet)
+
+#Basic Syntax
+--------------
+tagname  ---- input,div,span...
+#id
+.class_name
+attribute
+
+
+#Combined Selector
+div.classname
+parent > child (div > input)
+parent child :- child
+
+Pseudo-classes in css
+tagname:True
+        :hover
+        :checked
+
+a:link
+
