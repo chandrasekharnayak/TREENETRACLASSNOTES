@@ -1,0 +1,159 @@
+oops :- paradigm --- object
+
+var = data --- location --- object
+2things are covered
+
+data(attributes)---obj
+
+methods(functions)-- obj
+
+4 pillar inj oops
+
+Encapsulation
+Inheritance
+Polymerprisim
+Abnstraction
+
+pops :- paradigm ----procedure (function) that operate on data-- slow
+data --- fucntion are separate
+less modular
+no parent and child relationship, code reusablity is not possiable
+
+python1, C, Pascal,perl
+
+
+class :-
+A class is a blueprint or template for creating the object.
+
+if defines data(attributes) and method(behaviour) that the objects created from the class will have
+
+
+laptop -- design -- pattern-- blueprint
+
+    keyboard
+    screen
+    motherboard
+    mouse
+    th-port
+    c-port
+    ch-port
+    cd-driver
+
+
+
+what is a object?
+
+object is a instance(fixed realization) of a class (actual data)
+
+1.class is a template (not actual data)
+2.object is a instance(fixed realization) of a class (actual data)
+3.Classes help in creating multiple objects inside it, and that shared same strcture but have different data.
+var -- data--location
+methdo -- logic--data --- location
+
+how many types of data--variable?
+
+there are 3 tyeps of variables exits in class in oops python
+
+instance variable
+class variable
+local variable
+
+
+how many types of methods?
+
+there are 3 tyeps of methods exits in class in oops python
+
+instance method
+class method
+static method
+
+
+how to write class in python, statement
+
+syntax:-
+
+class ClassName:
+    define the variable
+    define methods
+
+
+how to call class
+
+object_refernence =
+
+object_refernence.variable
+object_refernence.methods()
+
+
+
+Note :- clas name  always be a Camel casing
+
+what is object refernece ?
+
+OR is a variable ,where we will store our class , so when a variable have to assign in class, then all the methdo and behiour should handel by the variable only.
+
+
+class
+object
+class syntax
+object_reference
+
+
+what is method vs function?
+
+list.append(), extend(),strip(),split(),join(),add()
+
+who is inside a class.
+
+function is independent, and not in a class
+print(),type(),id(),eval(),filter()
+
+
+what is a constructor?
+
+constructor is method only, but the constructor name always be __init__. , pass the instance of class.
+
+
+what is self?
+self is a instance variable, who is vary from object to object
+
+
+class
+
+    self.name
+    self.actiavation
+    self.student
+
+    def
+
+    def
+
+    def
+
+
+
+
+
+class
+object(var, method)
+class syntax
+object referenece
+constrctor
+self
+
+
+
+
+
+
+
+
+def f1():
+    instancee-- data -- logic--- return data
+
+
+
+
+
+

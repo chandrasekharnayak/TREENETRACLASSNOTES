@@ -236,8 +236,100 @@ grep "lo*gin" application.log
 
 grep "gr[ea]y" application.log
 
+#----------------------------------
+SED:- stream editor, it reads a text stream(from file or input), process it, and provide the output as modified text.
+CRUD :- create, read, update(modification) , delete
 
-SED
+modification any line in a file
+delete lines in a file
+insert any new line in a file
+update or modify in a file.
+
+sed :- by default it doesnot change the original file , unless we will use -i(explicit)
+
+syntax
+
+sed [option] 'command' file_name
+
+1. if you want read the content of all the data in a file
+
+sed '' file_name (read)
+
+2.if you want print a spcific line( read)
+
+sed -n 'line_num p' file_name
+
+3.if you want print a specific string in file
+
+sed -n '/string/p' file_name
+
+4.print range of line
+
+sed -n 'start_line_num,end_num p' file_name
+
+
+delete lines:- (delete)
+-----------
+
+1.delete the specific line (delete)
+
+sed '2d' file_name
+
+2.delete a range of liens(5 to 8)
+
+sed '5,8d' file_name
+
+3.delete lines that match the pattern
+
+sed '/testing/d' file_name
+
+
+Replace or substitute(s)  (update)
+------------------------
+sed 's/old_string/new_string/' file_name
+
+
+Insert a line (create)
+-------------
+insert a line either before or after
+
+before :- i
+after : a
+
+sed -i 'line_num i\this is a new line' filename (before)
+
+sed -i 'line_num a\this is a new_line' filename(after)
+
+
+#nano :- text editor (networking project)
+
+Ctrl+O (save :- write out)
+Ctrl+X (exit)
+Ctrl+W (serach for a string)
+Ctrl +K (cut :- delete a line)
+Ctrl+U ( Paste the last cut line)
+
+
+
+
+GNU s/w
+    GNU nano )(text editing)
+    GCC  (application run compiler)
+    GNU bash (CLI)
+    GNU coreutils()
+
+
+see it later
+sudo --- how user is working
+pipeline ---
+
+
+GIT
+
+
+
+
+
 
 
 

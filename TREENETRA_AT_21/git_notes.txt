@@ -1,0 +1,119 @@
+GIT :- global information tracker
+
+1.source code management
+2.Version contrlling system
+
+Team ---- write some code ----- verify --- lead
+
+Product Arch/ BA
+Product owner
+Project manager
+Team lead
+seniour sw eng
+associte sw en
+sw eng
+junior sw en
+trainee
+
+product vs project?
+
+product means the complete application, which one used in the real time market and used by the end user.
+collection of systemetically way of the project
+
+project :- project is the part of a product.
+
+product :- product arch design the product based the frontend, backend and database.
+database eng :-
+
+scripts is always saved in central repository(folder)
+
+
+vcs :- version control system.
+ways where we had stored all previous code on our repository
+
+
+
+
+
+Green House Theorm:-
+
+Folder1 (27th May 2011)-- 10gb
+f1.txt
+f2.txt
+f3.txt
+
+Folder2(29th May)
+F1.txt
+F2.txt
+F4.txt
+
+Folder3(31st May)
+F1.txt
+F2.txt
+f3.txt
+F4.txtx
+F5.txt
+
+whatsapp:-
+
+V1(only message)
+V2(message,emoji)
+V3(message,emoji,with photo status)
+V4(message,send pic,video status)
+V5(message,emoji,photo status, send pic, video status)
+
+Lvsc,Cvcs, Dvcs
+
+Local Vcs:-
+Cvcs :- Central Vcs
+
+
+
+ ---------c1---c4---c6--- Server---c3----c5----c2
+
+data stored in the server--- repo(folder)
+
+c1 --- changes --- track -- who, time, line, file name
+Old code stored the in the same help of branch mechanisim
+
+Dvcs :- distributed version control system
+
+
+                Cloud
+
+ credential -- username, password ---- specific storage ---- Repo--storage
+ TRIE
+
+
+GIT tool--- windows,linux,unix
+
+local system code push to remote repo
+remote repo code pull/clone to local system
+
+
+
+1960 -- unix
+1991 --- kernel linux(linus travold)-- 11.1 ---- 11.8(beta)--alpha---gaama
+
+Bitkeeper---
+
+1998-1999
+
+2003 ---- git-- physical serverb  and cloud platform
+
+github--- cloud platfrom who provide the repo.
+
+git(local) -------------------- cloud(github)--reepo
+                                   50
+50+1-------------------------------51
+
+
+
+
+
+
+
+
+
+
+
