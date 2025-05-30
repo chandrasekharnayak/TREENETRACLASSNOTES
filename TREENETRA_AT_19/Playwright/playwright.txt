@@ -1,83 +1,141 @@
-from playwright.sync_api import sync_playwright
-import time
+@@ -0,0 +1,140 @@
+1. Introduction to Playwright
+What is Playwright?
 
-def run(playwright):
-    browser = playwright.chromium.launch(headless=False)
-    context = browser.new_context(accept_downloads=True)
-    page = context.new_page()
+Playwright vs Selenium
 
-    # Go to the homepage
-    # page.goto("https://the-internet.herokuapp.com/")
-    # print("Title:", page.title())
+Architecture of Playwright
 
-    # --- Viewport Resize ---
-    # print("Resizing viewport...")
-    # page.set_viewport_size({"width": 12800, "height": 7200})
-    # time.sleep(3)
-    # --- Scroll to bottom ---
-    # print("Scrolling down...")
-    # time.sleep(3)
-    # page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-    # time.sleep(3)
+Supported browsers and languages
 
-    # --- Dropdown ---
-    # print("Handling dropdown...")
-    # page.goto("https://the-internet.herokuapp.com/dropdown")
-    # dropdown = page.locator("#dropdown")
-    # time.sleep(3)
-    # dropdown.select_option("2")  # Select option with value "2"
-    # time.sleep(3)
-    # selected = dropdown.input_value()
-    # print(f"Selected dropdown value: {selected}")
+Installing Playwright for Python
 
-    # --- Alerts & Dialogs ---
-    # print("Handling alerts...")
-    # page.goto("https://the-internet.herokuapp.com/javascript_alerts")
-    #
-    # time.sleep(3)
-    # def handle_dialog(dialog):
-    #     print(f"Dialog message: {dialog.message}")
-    #     time.sleep(3)
-    #     dialog.accept()
-    # page.on("dialog", handle_dialog)
-    # page.click("text=Click for JS Alert")  # Trigger alert, automatically accepted
+First Playwright script (simple example)
 
-    # --- File Upload ---
-    # print("Uploading file...")
-    # page.goto("https://the-internet.herokuapp.com/upload")
-    # file_input = page.locator('input#file-upload')
-    # file_path = "playwright.txt"  # Create this file before running or use your own path
-    # time.sleep(3)
-    # with open(file_path, "w") as f:
-    #     f.write("Hello Playwright file upload test!")
-    # file_input.set_input_files(file_path)
-    # time.sleep(3)
-    # page.click("input#file-submit")
-    # print("File uploaded. Result:", page.locator("div#uploaded-files").text_content())
+2. Playwright Basics with Python
+Browser launch options (Chromium, Firefox, WebKit)
 
-    # --- Popup (New Tab) ---
-    # print("Handling popup (new tab)...")
-    # page.goto("https://the-internet.herokuapp.com/windows")
-    # time.sleep(3)
-    # with page.expect_popup() as popup_info:
-    #     page.click("text=Click Here")  # Opens new tab
-    # popup = popup_info.value
-    # print("Popup URL:", popup.url)
-    # popup.close()
+Opening and closing browser
 
-    # --- File Download (Demonstration) ---
-    # The site itself doesn't offer a direct downloadable file,
-    # so let's simulate with a dummy example.
-    # print("Simulating file download...")
-    # page.goto("https://file-examples.com/index.php/sample-documents-download/sample-pdf-download/")
-    # with page.expect_download() as download_info:
-    #     # Click first download button for PDF example
-    #     page.click("a.btn.btn-orange.btn-outline.btn-xl")
-    # download = download_info.value
-    # download.save_as("sample_downloaded_file.pdf")
-    # print("File downloaded:", download.suggested_filename)
+Opening a new context and page
 
-    # browser.close()
+Navigating to a website
 
-with sync_playwright() as playwright:
-    run(playwright)
+Locating elements:
+
+CSS selectors
+
+XPath
+
+Role, text, and custom selectors
+
+Element actions:
+
+click(), fill(), type(), check(), uncheck(), select_option()
+
+3. Waiting Mechanisms
+Auto-waiting in Playwright
+
+Explicit waits (wait_for_selector())
+
+Assertions and checks
+
+Handling slow-loading elements
+
+4. Advanced User Interactions
+Mouse and keyboard actions
+
+Uploading and downloading files
+
+Handling dropdowns
+
+Handling alerts, popups, and dialogs
+
+Scrolling and viewport resizing
+
+5. Working with Frames and iFrames
+Switching frames
+
+Handling nested frames
+
+Accessing elements inside frames
+
+6. Network Interception and Mocking
+Intercepting API requests and responses
+
+Modifying or blocking requests
+
+Mocking network responses
+
+7. Handling Multiple Pages and Tabs
+Opening new tabs/windows
+
+Switching between pages
+
+Communicating between pages
+
+8. Test Automation Framework with Pytest
+Introduction to pytest
+
+Structuring test cases
+
+Using conftest.py for fixtures
+
+Setup and teardown methods
+
+Parameterized tests
+
+Grouping tests using markers
+
+9. Reporting and Screenshots
+Capturing screenshots
+
+Recording videos
+
+HTML reports using pytest-html or allure
+
+10. Parallel Execution and Test Isolation
+Running tests in parallel with pytest-xdist
+
+Isolating contexts/browsers
+
+Using multiple test data sets
+
+11. Handling Authentication
+Basic Authentication
+
+Login via UI
+
+Session storage and cookies
+
+Persistent login
+
+12. Playwright CodeGen Tool
+Generating code using Playwright Codegen
+
+Modifying generated scripts
+
+13. CI/CD Integration
+Running Playwright tests in GitHub Actions, Jenkins, or GitLab
+
+Headless execution on CI servers
+
+Saving artifacts: logs, screenshots, videos
+
+14. Best Practices
+Using Page Object Model (POM)
+
+Modular code design
+
+Debugging techniques
+
+Maintaining stable locators
+
+15. Bonus Topics
+Testing single-page applications (SPA)
+
+Visual testing with Playwright
+
+Accessibility testing
+
+Localization/Internationalization testing
