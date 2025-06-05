@@ -1,0 +1,70 @@
+1. git clone
+
+Clone a remote repo to your local system.
+
+2.git pull
+:- download and merge changes from remote or local
+
+
+3.git fetch
+:- download changes from remote but dont merge
+
+4. git merge
+
+Merge one brach into another branch
+
+5.git rebase
+
+:- reapply commnits from one branch onto another brach
+
+feature-branch ----- a  b c ----- 'push1'
+main --- a b c ---- 'v1'
+
+
+6. git statsh
+:- use temporarily save un-commited chages
+
+7.git cherry-pick
+:- apply a single commit fron another branch(merge conflict)
+
+bebf3373e425dc1f43ef8db5085f89a8ff01b674
+
+
+8. git checkout
+
+:- switch the branch
+
+
+9.git log
+:- view commit history
+
+10.git diff
+:- see chnages between version
+
+git init
+
+git add .
+git add filename
+
+git rm -- cached filename
+
+git commit -m 'commitname'
+
+git push -u origin bnranchname
+git push -f origin branchname
+
+git remote add origin url
+
+git branch -M branchname
+git checkout branchname
+git switch bramnchname
+
+git checkout -b new_branch_name
+
+git set-url remote origin https://<access_token>@github.com/chandrasekharnayak/AT21.git
+
+
+git clone
+
+git pull
+

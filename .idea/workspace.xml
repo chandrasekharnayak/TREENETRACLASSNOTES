@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1dd1eb9e-f06f-4f3e-bf75-0052bcef089b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/TREENETRA_AT_19/Playwright/iframe.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TREENETRA_AT_19/Playwright/windows.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TREENETRA_AT_20/API/rest_api_reqres.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TREENETRA_AT_20/oops/inheritance.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TREENETRA_AT_20/oops/encapsulation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,27 +31,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.a.executor&quot;: &quot;Run&quot;,
-    &quot;Python.actions_playwright.executor&quot;: &quot;Run&quot;,
-    &quot;Python.class_method_static_var.executor&quot;: &quot;Run&quot;,
-    &quot;Python.clsss_.executor&quot;: &quot;Run&quot;,
-    &quot;Python.iframe.executor&quot;: &quot;Run&quot;,
-    &quot;Python.inheritance.executor&quot;: &quot;Run&quot;,
-    &quot;Python.instance_method_variable_use_banking_system.executor&quot;: &quot;Run&quot;,
-    &quot;Python.mouse_and_keyboard.executor&quot;: &quot;Run&quot;,
-    &quot;Python.pl_prac.executor&quot;: &quot;Run&quot;,
-    &quot;Python.rest_api_reqres.executor&quot;: &quot;Run&quot;,
-    &quot;Python.wait_mechanisim.executor&quot;: &quot;Run&quot;,
-    &quot;Python.windows.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/TREENETRA/PycharmProjects/TREENETRADAILY&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.a.executor": "Run",
+    "Python.actions_playwright.executor": "Run",
+    "Python.class_method_static_var.executor": "Run",
+    "Python.clsss_.executor": "Run",
+    "Python.encapsulation.executor": "Run",
+    "Python.iframe.executor": "Run",
+    "Python.inheritance.executor": "Run",
+    "Python.instance_method_variable_use_banking_system.executor": "Run",
+    "Python.mouse_and_keyboard.executor": "Run",
+    "Python.pl_prac.executor": "Run",
+    "Python.rest_api_reqres.executor": "Run",
+    "Python.wait_mechanisim.executor": "Run",
+    "Python.windows.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/TREENETRA/PycharmProjects/TREENETRADAILY",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
-  <component name="RunManager" selected="Python.inheritance">
-    <configuration name="a" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+}]]></component>
+  <component name="RunManager" selected="Python.encapsulation">
+    <configuration name="encapsulation" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TREENETRADAILY" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -63,11 +61,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TREENETRA_AT_19/Playwright" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TREENETRA_AT_20/oops" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TREENETRA_AT_19/Playwright/a.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TREENETRA_AT_20/oops/encapsulation.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -166,11 +164,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.encapsulation" />
         <item itemvalue="Python.inheritance" />
         <item itemvalue="Python.rest_api_reqres" />
         <item itemvalue="Python.windows" />
         <item itemvalue="Python.iframe" />
-        <item itemvalue="Python.a" />
       </list>
     </recent_temporary>
   </component>
