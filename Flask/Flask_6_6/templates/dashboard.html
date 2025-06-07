@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head><title>Dashboard</title></head>
+<body>
+    <h2>Welcome {{ username }}</h2>
+    <button onclick="fetchData()">Fetch API Data</button>
+    <pre id="output"></pre>
+    <br><a href="/logout">Logout</a>
+
+    <script>
+        async function fetchData() {
+            const response = await fetch('/api/data', {
+                headers: {
+                    'Authorization': 'Bearer {{ token }}'
+                }
+            });
+            const json = await response.json();
+            document.getElementById('output').textContent = JSON.stringify(json, null, 2);
+        }
+    </script>
+</body>
+</html>
